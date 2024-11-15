@@ -8,7 +8,7 @@
         <accessor type='' value='' selected='true' fallback='false'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='ft1' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='d3cbba47-5f9a-4f44-9a6b-d5f8d1092aa5' uiType='base'>
+    <step action='setValue' value='"ft1"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c7930bc6-4cf4-43d7-a8e9-3bf1812b43c3' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='textbox("form-control inputField-customizable")' selected='false' fallback='true'></accessor>
@@ -26,7 +26,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[value=""]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='cayuse1234' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='d15dae06-0efa-4026-9285-7de25b6687bd' uiType='base' isHidden='true'>
+    <step action='setValue' value='"cayuse1234"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='2ccbbb35-32f3-4153-9305-68bdf63210be' uiType='base' isHidden='true'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='password("form-control inputField-customizable")' selected='false' fallback='true'></accessor>
@@ -41,7 +41,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[name="password"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='a55ceb75-e3ba-4d76-9574-f98f50d05b20' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0b3b27d2-c5c7-4dfa-b004-43480ae7074a' uiType='base'>
       <dialect type='sahi'>
         <accessor type='AttrClass' value='submit("btn btn-primary submitButton-customizable")' selected='true' fallback='true'></accessor>
         <accessor type='XPathName' value='byXPath(&apos;//*[@name="signInSubmitButton"]&apos;)' selected='false' fallback='true'></accessor>
@@ -56,6 +56,12 @@
         <accessor type='JQuery' value='byJQuery(&apos;.cognito-asf &gt; .btn.btn-primary.submitButton-customizable&apos;)' selected='false' fallback='true'></accessor>
         <accessor type='JQuery' value='byJQuery(&apos;form[name="cognitoSignInForm"] &gt; input[name="signInSubmitButton"]&apos;)' selected='false' fallback='true'></accessor>
         <accessor type='JQuery' value='byJQuery(&apos;input[value="Sign in"]&apos;)' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='assertEqual' value='https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='4500bf67-d9ee-4acd-beba-8fd91915fd62' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='"url"' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='"anyString"' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
   </testcase>
