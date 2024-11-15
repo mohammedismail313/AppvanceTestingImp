@@ -93,7 +93,9 @@
     </step>
     <step action='while' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='69cc422d-091d-4d1a-bfd8-7e5c77f9a390' uiType='conditional'>
       <dialect type='sahi'>
-        <accessor type='unknown' value='url!=https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='$url==false' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='$url' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='url!=https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='url!=' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='url="https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='ur' selected='false' fallback='true'></accessor>
