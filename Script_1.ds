@@ -52,7 +52,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[value="Sign in"]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='bbf6b4b8-6377-4afe-9fdc-1ca960c88ebc' uiType='base'>
+    <step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='bbf6b4b8-6377-4afe-9fdc-1ca960c88ebc' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
     <step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='98b36c41-04ee-42cf-ba9f-cd476767296a' uiType='conditional'>
@@ -122,6 +122,9 @@
       </dialect>
     </step>
     <step action='endWhile' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='bdf493c0-5125-46ba-b048-626bae287235' uiType='end' sibling='69cc422d-091d-4d1a-bfd8-7e5c77f9a390'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='da5a0b53-301b-4c9d-b1e8-fc675a6139ab' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
   </testcase>
