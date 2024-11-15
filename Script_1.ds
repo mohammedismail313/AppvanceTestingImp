@@ -29,7 +29,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[value=""]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='22bac64b-0ad1-4eaf-a46b-2a41bb99e633' uiType='base'>
+    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='22bac64b-0ad1-4eaf-a46b-2a41bb99e633' uiType='base' isHidden='true'>
       <dialect type='sahi'>
         <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
@@ -53,9 +53,7 @@
       </dialect>
     </step>
     <step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='bbf6b4b8-6377-4afe-9fdc-1ca960c88ebc' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='' value='' selected='true' fallback='false'></accessor>
-      </dialect>
+      <dialect type='sahi'></dialect>
     </step>
     <step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='98b36c41-04ee-42cf-ba9f-cd476767296a' uiType='conditional'>
       <dialect type='sahi'>
@@ -80,7 +78,7 @@
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='59fe3218-4e1c-48ed-841c-654d6068480e' uiType='base'>
+    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='59fe3218-4e1c-48ed-841c-654d6068480e' uiType='base' isHidden='true'>
       <dialect type='sahi'>
         <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
