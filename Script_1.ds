@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
   <testcase name='' description='script generated from Web Designer' author='Mohanraj_Seerangan_CAYUSE@appvance.com' version='webDesigner'>
-    <dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'></dpl>
+    <dpl filename='{ds}/Login_Credentials.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'></dpl>
     <fallback useFallback='true'></fallback>
     <shadowDOM useShadowDOM='true'></shadowDOM>
     <step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6dc3e5bf-be79-41e9-bb1a-f7f6652bac9a' uiType='base'>
@@ -8,7 +8,7 @@
         <accessor type='' value='' selected='true' fallback='false'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='"ft1"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c7930bc6-4cf4-43d7-a8e9-3bf1812b43c3' uiType='base'>
+    <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c7930bc6-4cf4-43d7-a8e9-3bf1812b43c3' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='textbox("form-control inputField-customizable")' selected='false' fallback='true'></accessor>
@@ -26,7 +26,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[value=""]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='"cayuse1234"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='2ccbbb35-32f3-4153-9305-68bdf63210be' uiType='base' isHidden='true'>
+    <step action='setValue' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='2ccbbb35-32f3-4153-9305-68bdf63210be' uiType='base' isHidden='true'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='password("form-control inputField-customizable")' selected='false' fallback='true'></accessor>
@@ -75,7 +75,7 @@
     <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='318f3206-d0bc-4fbb-aa85-b87b19efe7f7' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
-    <step action='setValue' value='"ft1"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='ac5f7eda-4e68-49a0-92d4-10670aa26035' uiType='base'>
+    <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='ac5f7eda-4e68-49a0-92d4-10670aa26035' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='textbox("form-control inputField-customizable")' selected='false' fallback='true'></accessor>
@@ -96,7 +96,7 @@
     <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='ca2d9aff-7e4f-4e0c-9560-dbeb0d55acda' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
-    <step action='setValue' value='"cayuse1234"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='ae7cb098-08a2-4792-b685-f5b1c6c6adef' uiType='base' isHidden='true'>
+    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='ae7cb098-08a2-4792-b685-f5b1c6c6adef' uiType='base' isHidden='true'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='password("form-control inputField-customizable")' selected='false' fallback='true'></accessor>
