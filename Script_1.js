@@ -7,7 +7,7 @@ navigateTo("https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70
 addSyntheticDPL("{ds}/Login_Credentials.csv",0);
 
 var y="{ds}/Login_Credentials.csv";
-console.log(y.length);
+console.log(y);
 // var x=y.length;
 // console.log(x);
 // while (y.length>0){
