@@ -12,6 +12,31 @@
         <accessor type='filePath' value='"{ds}/Login_Credentials.csv"' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
+    <step action='while' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='80ceb2c8-3655-4fbc-8c8b-a54f3e2f3329' uiType='conditional'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='Login_Crendentials.length()&gt;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='Login_Crendentials.length()&gt;0' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='61e62f04-63bc-4b6a-a72b-1dd94be05bd6' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='d3155a7a-5af5-49f6-84fb-a22d771b0441' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='endWhile' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='f8f1dd1a-923d-4710-845b-bb7dc8941ea5' uiType='end' sibling='80ceb2c8-3655-4fbc-8c8b-a54f3e2f3329'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='8c0ea16d-8d68-4d20-ae57-51cf4f29ea23' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
     <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6bf0c59d-219c-499d-81d6-ad61cb143a7b' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
