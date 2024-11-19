@@ -110,6 +110,11 @@
     <step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='9c0d8b07-fb77-4d46-9f3c-28154a87fc21' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
+    <step action='addSyntheticDPL' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='019b2f1b-fe98-418e-af5d-68eb0af3c6b9' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='filePath' value='"{ds}/Login_credentialwithURL.csv"' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
     <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='fa366833-c3a3-4549-8278-dad27236d36f' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
