@@ -19,9 +19,10 @@
     </step>
     <step action='while' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='80ceb2c8-3655-4fbc-8c8b-a54f3e2f3329' uiType='conditional'>
       <dialect type='sahi'>
+        <accessor type='unknown' value='y=true' selected='true' fallback='true'></accessor>
         <accessor type='unknown' value='Login_Crendentials.length()&gt;)' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='Login_Crendentials.length()&gt;0' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
     <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='61e62f04-63bc-4b6a-a72b-1dd94be05bd6' uiType='base'>
