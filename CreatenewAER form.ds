@@ -5,6 +5,7 @@
     <shadowDOM useShadowDOM='true'></shadowDOM>
     <step action='addHashDPL' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='79cad1cc-a0fc-4f57-9e89-1ad95000ae8e' uiType='base'>
       <dialect type='sahi'>
+        <accessor type='filePath' value='"{ds}/Login_Credentials.csv"' selected='false' fallback='true'></accessor>
         <accessor type='filePath' value='"{ds}/URL.csv"' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
@@ -35,7 +36,48 @@
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='navigateTo' value='$tenent_url' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='f0203187-55c2-4e92-8ffc-7a9a7757e6d7' uiType='base'>
+    <step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='2a4a160a-d6f0-4ff4-8aee-82bc096f2837' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='' value='' selected='true' fallback='false'></accessor>
+      </dialect>
+    </step>
+    <step action='assertContainsText' value='"Site: Master"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='518c0edb-e26f-476a-ada5-928d959164ba' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='Parent' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='true' fallback='true'></accessor>
+        <accessor type='Parent' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='false' fallback='true'></accessor>
+        <accessor type='Parent' value='span(1, _in(submit({&apos;aria-label&apos;:&apos;Sites&apos;})))' selected='false' fallback='true'></accessor>
+        <accessor type='AttrClass' value='span("title[2]")' selected='false' fallback='true'></accessor>
+        <accessor type='Text' value='span("Site: Master")' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0fa73f06-9b20-473b-ba1f-76ec3552ffb5' uiType='conditional'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='Asser Contains Text==true' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='6d70a335-2c58-42c1-8ba6-0654514a45e0' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='6212aac0-90b2-4b7b-a914-9ef089a4a023' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='link(0, _in(listItem("option-2222")))' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='9647c53b-fc38-4004-9ca2-6e7322c0b52f' uiType='end' sibling='0fa73f06-9b20-473b-ba1f-76ec3552ffb5'>
       <dialect type='sahi'></dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='cc848750-1930-4219-85f0-e2db5ee55a32' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+        <accessor type='Parent' value='link(0, _in(listItem("option-2222")))' selected='true' fallback='true'></accessor>
+        <accessor type='Parent' value='link(0, _in(listItem({&apos;id&apos;:&apos;option-2222&apos;})))' selected='false' fallback='true'></accessor>
+        <accessor type='Id' value='link("2222")' selected='false' fallback='true'></accessor>
+        <accessor type='Text' value='link("PT")' selected='false' fallback='true'></accessor>
+      </dialect>
     </step>
   </testcase>
