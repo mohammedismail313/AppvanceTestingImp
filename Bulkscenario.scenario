@@ -29,7 +29,7 @@
     <userinfo/>
   </basics>
   <resources>
-    <resource name="Appvance_Testing" type="folder" path="REPOSITORY/Appvance_Testing/"/>
+    <resource name="CreatenewAER form.ds" type="ds" path="REPOSITORY/Appvance_Testing/CreatenewAER form.ds"/>
   </resources>
   <testnodes>
     <node name="localhost" location="https://training.appvance.net:/TMServer/ws/TestNode"/>
@@ -40,13 +40,7 @@
     <bundle name="oracle" version="10.2.0.5"/>
     <bundle name="ds" version="3.0"/>
   </bundles>
-  <datasources>
-    <dpl name="Untitled1" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="Appvance_Testing/Login_Credentials.csv"/>
-      </argument>
-    </dpl>
-  </datasources>
+  <datasources/>
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
@@ -89,8 +83,8 @@
       <opt name="RampDownSeconds" value="0"/>
       <opt name="MaxRampDownTime" value="0"/>
       <opt name="tolerance" value="0"/>
-      <opt name="global_concurrent_users" value="1"/>
-      <opt name="testnode_concurrent_users" value="1"/>
+      <opt name="global_concurrent_users" value="4"/>
+      <opt name="testnode_concurrent_users" value="4"/>
     </options>
     <options type="commandline">
       <opt name="async" value="false"/>
@@ -132,6 +126,9 @@
     </options>
     <options type="jira">
       <opt name="useJira" value="false"/>
+      <opt name="jiraIssueTypes" value="[object Object]"/>
+      <opt name="jiraFailure" value="[object Object]"/>
+      <opt name="jiraSuccess" value="[object Object]"/>
     </options>
     <options type="lr">
       <opt name="saveCompleteLrOutputLog" value="false"/>
@@ -155,19 +152,8 @@
     </controller>
     <testcase name="Testcase1" importance="normal">
       <test>
-        <run name="LoginScenariousingDPL" langtype="ds3" resource="Appvance_Testing/CreatenewAER form.ds" method="ds" testclass="Chrome">
-          <argument name="Untitled1" method="getDataByIndex" dpl="Untitled1">
-            <argument name="index" value="0"/>
-          </argument>
-          <argument name="Untitled2" method="getDataByIndex" dpl="Untitled1">
-            <argument name="index" value="1"/>
-          </argument>
-          <argument name="Untitled3" method="getDataByIndex" dpl="Untitled1">
-            <argument name="index" value="2"/>
-          </argument>
-          <argument name="Untitled4" method="getDataByIndex" dpl="Untitled1">
-            <argument name="index" value="3"/>
-          </argument>
+        <run name="LoginScenariousingDPL" langtype="ds3" resource="CreatenewAER form.ds" method="ds" testclass="Chrome">
+          <argument name="Untitled1" method="getNextData" dpl="Untitled1"/>
         </run>
       </test>
     </testcase>
@@ -175,7 +161,7 @@
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
-  <execution type="functionaltest" subtype="bulk">
+  <execution type="functionaltest" subtype="functional">
     <iteration name="Iteration1" controller="Iteration1">
       <testcase name="Testcase1" users="1" totalexecutions="1"/>
     </iteration>
