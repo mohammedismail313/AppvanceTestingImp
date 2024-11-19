@@ -133,6 +133,9 @@
     </options>
     <options type="jira">
       <opt name="useJira" value="false"/>
+      <opt name="jiraIssueTypes" value="[object Object]"/>
+      <opt name="jiraFailure" value="[object Object]"/>
+      <opt name="jiraSuccess" value="[object Object]"/>
     </options>
     <options type="lr">
       <opt name="saveCompleteLrOutputLog" value="false"/>
@@ -157,10 +160,18 @@
     <testcase name="Testcase1" importance="normal">
       <test>
         <run name="Untitled1" langtype="ds3" resource="LoginTC.ds" method="ds" testclass="Chrome">
-          <argument name="Untitled1" method="getNextData" dpl="Untitled1"/>
-          <argument name="Untitled2" method="getNextData" dpl="Untitled1"/>
-          <argument name="Untitled3" method="getNextData" dpl="Untitled1"/>
-          <argument name="Untitled4" method="getNextData" dpl="Untitled1"/>
+          <argument name="Untitled1" method="getDataByIndex" dpl="Untitled1">
+            <argument name="index" value="0"/>
+          </argument>
+          <argument name="Untitled2" method="getDataByIndex" dpl="Untitled1">
+            <argument name="index" value="1"/>
+          </argument>
+          <argument name="Untitled3" method="getDataByIndex" dpl="Untitled1">
+            <argument name="index" value="2"/>
+          </argument>
+          <argument name="Untitled4" method="getDataByIndex" dpl="Untitled1">
+            <argument name="index" value="3"/>
+          </argument>
         </run>
       </test>
     </testcase>
