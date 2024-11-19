@@ -11,12 +11,12 @@
         <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='d85688c8-691a-402c-b82d-ae6a7c1a9c81' uiType='base'>
+    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='d85688c8-691a-402c-b82d-ae6a7c1a9c81' uiType='base' isHidden='true'>
       <dialect type='sahi'>
         <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='61abb58b-09f0-4e5f-b876-9d25e7040e75' uiType='base'>
+    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='61abb58b-09f0-4e5f-b876-9d25e7040e75' uiType='base' isHidden='true'>
       <dialect type='sahi'>
         <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
       </dialect>
@@ -49,7 +49,7 @@
         <accessor type='unknown' value='assertContainsText (span("FT 1"));' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='assertContainsText span("FT 1");' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='assertContainsText span("FT 1")' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContainsText ' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='assertContainsText' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
@@ -70,6 +70,9 @@
       <dialect type='sahi'></dialect>
     </step>
     <step action='log' value='result' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='126d5cfb-edb3-4283-9a52-85e87d8b57ce' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='log' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='bf860d7d-a5f2-4608-8a23-055fbece2728' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
   </testcase>
