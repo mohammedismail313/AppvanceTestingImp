@@ -8,6 +8,7 @@ navigateTo("https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70
 //addSyntheticDPL("{ds}/Login_Credentials.csv",0);
 var y="{ds}/Login_Credentials.csv";
 var data=y;
+console.log(data);
 while (){
    setValue(fallback(`byXPath('//*[@id="username"]')`),$Username);
    setValue(fallback(`byXPath('//*[@id="password"]')`),$Password);
