@@ -28,7 +28,7 @@
    <accessor type='unknown' value='byXPath(&apos;//*[@name=&quot;signInSubmitButton&quot;]&apos;)' fallback='true' selected='true'/>
 </dialect>
 </step>
-<step action='navigateTo' value='1000' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+<step action='navigateTo' value='https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='unknown' value='' fallback='false' selected='true'/>
 </dialect>
