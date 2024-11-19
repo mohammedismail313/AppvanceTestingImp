@@ -1,92 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
   <testcase name='' description='script generated from Web Designer' author='Mohanraj_Seerangan_CAYUSE@appvance.com' version='webDesigner'>
-    <dpl filename='{ds}/Diff_UserLogin.csv' exectype='runnextstep' errorhandling='' type='HashDPL' locale='en_US'></dpl>
+    <dpl filename='' exectype='runnextstep' errorhandling='' type='HashDPL' locale='en_US'></dpl>
     <fallback useFallback='true'></fallback>
     <shadowDOM useShadowDOM='true'></shadowDOM>
-    <step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6dc3e5bf-be79-41e9-bb1a-f7f6652bac9a' uiType='base'>
+    <step action='navigateTo' value='"https://sahitest.com/demo/formTest.htm"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='da5a0b53-301b-4c9d-b1e8-fc675a6139ab' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
-    <step action='addHashDPL' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='1166af7a-5cc1-486e-8857-9cb387f4486d' uiType='base'>
+    <step action='setSelected' value='"o2"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='dd9f5152-5830-4f9e-9b1a-b6d5d64c02b4' uiType='base'>
       <dialect type='sahi'>
-        <accessor type='filePath' value='"{ds}/Diff_UserLogin.csv"' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='select("s1Id")' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='select' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='store' value='"The value is 11"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='3a31221b-c51d-4774-a31d-e823ed3f1499' uiType='base'>
+    <step action='store' value='getSelectTexts(select("s1Id"))' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b1a131a3-6a6c-4a36-a57e-4954c7567793' uiType='base'>
       <dialect type='sahi'>
-        <accessor type='unknown' value='value' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='str' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='data' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='values' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='log' value='value' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='d49aae6b-e390-410b-b0ef-ebfbd9a85f19' uiType='base'>
+    <step action='log' value='values' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='65273f9c-465b-4c9c-ab65-139b3a77efd3' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
-    <step action='store' value='value.replace(/[^0-9.)/g."")' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c83052c9-cd60-4e4d-9532-41c80e3f5a03' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='value1' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='log' value='value1' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='249d1f34-d633-4a13-ad86-fbfe5247daad' uiType='base'>
+    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ec1aa07b-12b9-4b06-8b99-a5009da3142f' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
-    <step action='setValue' value='$User1name' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6bf0c59d-219c-499d-81d6-ad61cb143a7b' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='XPathId' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='AttrClass' value='textbox("form-control inputField-customizable")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathName' value='byXPath(&apos;//*[@name="username"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Id' value='textbox("username")' selected='false' fallback='true'></accessor>
-        <accessor type='AttrName' value='textbox("username")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//input[@id=&apos;username&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="form-control inputField-customizable"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div/div/div/div[2]/div/form/div/input&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;username&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='textbox({&apos;type&apos;:&apos;text&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;input[class="form-control inputField-customizable"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#username&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;input[name="username"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;input[value=""]&apos;)' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='setValue' value='$User1password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ab5824c0-e8ed-4e7f-9cd6-aaec0ce966d7' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e4a3ff36-edef-41be-b3ee-da3307d51394' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='AttrClass' value='submit("btn btn-primary submitButton-customizable")' selected='true' fallback='true'></accessor>
-        <accessor type='XPathName' value='byXPath(&apos;//*[@name="signInSubmitButton"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AttrName' value='submit("signInSubmitButton")' selected='false' fallback='true'></accessor>
-        <accessor type='AttrValue' value='submit("Sign in")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath(&apos;//div/div/div/div[2]/div/form/input[2]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="btn btn-primary submitButton-customizable"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div/div/div/div[2]/div/form/input[2]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("/html[1]/body[1]/div[@class=&apos;container&apos;]/div[@class=&apos;modal-dialog&apos;]/div[@class=&apos;modal-content background-customizable modal-content-mobile&apos;]/div[@class=&apos;modal-body&apos;]/div[1]/form[@class=&apos;cognito-asf&apos;]/input[@class=&apos;btn btn-primary submitButton-customizable&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='submit({&apos;type&apos;:&apos;Submit&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;form[class="cognito-asf"] &gt; input[class="btn btn-primary submitButton-customizable"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;.cognito-asf &gt; .btn.btn-primary.submitButton-customizable&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;form[name="cognitoSignInForm"] &gt; input[name="signInSubmitButton"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;input[value="Sign in"]&apos;)' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='setValue' value='$User2name' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0fae233b-e3af-44f9-9f54-7554704aa187' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='setValue' value='$User2password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='7807cc25-6112-4be9-98d6-69dae80103fb' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='828d57f7-34f9-4c9d-afbc-8442d6d44e6f' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='submit("btn btn-primary submitButton-customizable")' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='da5a0b53-301b-4c9d-b1e8-fc675a6139ab' uiType='base'>
+    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='8f7543cc-bbe7-405b-b8cc-cef6ea68a499' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
   </testcase>
