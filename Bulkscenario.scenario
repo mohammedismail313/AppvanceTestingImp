@@ -152,8 +152,8 @@
     </controller>
     <testcase name="Testcase1" importance="normal">
       <test>
-        <run name="LoginScenariousingDPL" langtype="ds3" resource="CreatenewAER form.ds" method="ds" testclass="Chrome">
-          <argument name="Untitled1" method="getNextData" dpl="Untitled1"/>
+        <run name="LoginScenariousingDPL" langtype="ds3" resource="Appvance_Testing/CreatenewAER form.ds" method="ds" testclass="Chrome">
+          <argument name="Untitled1" method="getDataByIndex" dpl="Untitled1"/>
         </run>
       </test>
     </testcase>
