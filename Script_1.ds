@@ -1,145 +1,139 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testcase   name= 'Script_1.ds' description= '' author= 'Mohanraj_Seerangan_CAYUSE@appvance.com' version= ''>
-<dpl filename='{ds}/Login_credentialwithURL.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'/>
-<fallback useFallback='true'/>
-<shadowDOM useShadowDOM='true'/>
-<step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='addSyntheticDPL' value='' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='"{ds}/Login_credentialwithURL.csv"' fallback='true' selected='true'/>
-   <accessor type='unknown' value='"{ds}/Login_Credentials.csv"' fallback='true' selected='false'/>
-</dialect>
-</step>
-<step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='XPathId' value='byXPath(&apos;//*[@id=&quot;username&quot;]&apos;)' fallback='true' selected='true'/>
-   <accessor type='AttrClass' value='textbox(&quot;form-control inputField-customizable&quot;)' fallback='true' selected='false'/>
-   <accessor type='XPathName' value='byXPath(&apos;//*[@name=&quot;username&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='Id' value='textbox(&quot;username&quot;)' fallback='true' selected='false'/>
-   <accessor type='AttrName' value='textbox(&quot;username&quot;)' fallback='true' selected='false'/>
-   <accessor type='XPath' value='byXPath(&quot;//input[@id=&apos;username&apos;]&quot;)' fallback='true' selected='false'/>
-   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;form-control inputField-customizable&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div/div/div/div[2]/div/form/div/input&apos;)' fallback='true' selected='false'/>
-   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;username&apos;)&quot;)' fallback='true' selected='false'/>
-   <accessor type='Attribute' value='textbox({&apos;type&apos;:&apos;text&apos;})' fallback='true' selected='false'/>
-   <accessor type='JQuery' value='byJQuery(&apos;input[class=&quot;form-control inputField-customizable&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='JQuery' value='byJQuery(&apos;#username&apos;)' fallback='true' selected='false'/>
-   <accessor type='JQuery' value='byJQuery(&apos;input[name=&quot;username&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='JQuery' value='byJQuery(&apos;input[value=&quot;&quot;]&apos;)' fallback='true' selected='false'/>
-</dialect>
-</step>
-<step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;password&quot;]&apos;)' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='AttrClass' value='submit(&quot;btn btn-primary submitButton-customizable&quot;)' fallback='true' selected='true'/>
-   <accessor type='XPathName' value='byXPath(&apos;//*[@name=&quot;signInSubmitButton&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='AttrName' value='submit(&quot;signInSubmitButton&quot;)' fallback='true' selected='false'/>
-   <accessor type='AttrValue' value='submit(&quot;Sign in&quot;)' fallback='true' selected='false'/>
-   <accessor type='XPath' value='byXPath(&apos;//div/div/div/div[2]/div/form/input[2]&apos;)' fallback='true' selected='false'/>
-   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;btn btn-primary submitButton-customizable&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div/div/div/div[2]/div/form/input[2]&apos;)' fallback='true' selected='false'/>
-   <accessor type='RelativeXPath' value='byXPath(&quot;/html[1]/body[1]/div[@class=&apos;container&apos;]/div[@class=&apos;modal-dialog&apos;]/div[@class=&apos;modal-content background-customizable modal-content-mobile&apos;]/div[@class=&apos;modal-body&apos;]/div[1]/form[@class=&apos;cognito-asf&apos;]/input[@class=&apos;btn btn-primary submitButton-customizable&apos;]&quot;)' fallback='true' selected='false'/>
-   <accessor type='Attribute' value='submit({&apos;type&apos;:&apos;Submit&apos;})' fallback='true' selected='false'/>
-   <accessor type='JQuery' value='byJQuery(&apos;form[class=&quot;cognito-asf&quot;] &gt; input[class=&quot;btn btn-primary submitButton-customizable&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='JQuery' value='byJQuery(&apos;.cognito-asf &gt; .btn.btn-primary.submitButton-customizable&apos;)' fallback='true' selected='false'/>
-   <accessor type='JQuery' value='byJQuery(&apos;form[name=&quot;cognitoSignInForm&quot;] &gt; input[name=&quot;signInSubmitButton&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='JQuery' value='byJQuery(&apos;input[value=&quot;Sign in&quot;]&apos;)' fallback='true' selected='false'/>
-</dialect>
-</step>
-<step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='true' selected='true'/>
-   <accessor type='unknown' value='url=&quot;https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests&quot;' fallback='true' selected='false'/>
-</dialect>
-</step>
-<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='(//button[@type=&apos;button&apos;])[2]' fallback='true' selected='true'/>
-   <accessor type='unknown' value='"url"' fallback='true' selected='false'/>
-   <accessor type='unknown' value='"anyString"' fallback='true' selected='false'/>
-</dialect>
-</step>
-<step action='else' value='' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;username&quot;]&apos;)' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='true' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;password&quot;]&apos;)' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='submit(&quot;btn btn-primary submitButton-customizable&quot;)' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='while' value='$Url' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='$Url=true' fallback='true' selected='true'/>
-   <accessor type='unknown' value='$Url=false' fallback='true' selected='false'/>
-   <accessor type='unknown' value='$Username' fallback='true' selected='false'/>
-   <accessor type='unknown' value='$' fallback='true' selected='false'/>
-   <accessor type='unknown' value='$Url==false' fallback='true' selected='false'/>
-   <accessor type='unknown' value='$url==false' fallback='true' selected='false'/>
-   <accessor type='unknown' value='$url' fallback='true' selected='false'/>
-   <accessor type='unknown' value='url!=https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests&quot;' fallback='true' selected='false'/>
-   <accessor type='unknown' value='url!=' fallback='true' selected='false'/>
-   <accessor type='unknown' value='url=&quot;https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests&quot;' fallback='true' selected='false'/>
-   <accessor type='unknown' value='ur' fallback='true' selected='false'/>
-</dialect>
-</step>
-<step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;username&quot;]&apos;)' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;password&quot;]&apos;)' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='submit(&quot;btn btn-primary submitButton-customizable&quot;)' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='endWhile' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-</testcase>
+  <testcase name='' description='script generated from Web Designer' author='Mohanraj_Seerangan_CAYUSE@appvance.com' version='webDesigner'>
+    <dpl filename='{ds}/Login_data.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'></dpl>
+    <fallback useFallback='true'></fallback>
+    <shadowDOM useShadowDOM='true'></shadowDOM>
+    <step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6dc3e5bf-be79-41e9-bb1a-f7f6652bac9a' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='addSyntheticDPL' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='a5796471-8901-4ba1-8d1e-8a7b3367c0b5' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='filePath' value='"{ds}/Login_credentialwithURL.csv"' selected='true' fallback='true'></accessor>
+        <accessor type='filePath' value='"{ds}/Login_Credentials.csv"' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='setValue' value='$A_Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6bf0c59d-219c-499d-81d6-ad61cb143a7b' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='XPathId' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='AttrClass' value='textbox("form-control inputField-customizable")' selected='false' fallback='true'></accessor>
+        <accessor type='XPathName' value='byXPath(&apos;//*[@name="username"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='Id' value='textbox("username")' selected='false' fallback='true'></accessor>
+        <accessor type='AttrName' value='textbox("username")' selected='false' fallback='true'></accessor>
+        <accessor type='XPath' value='byXPath("//input[@id=&apos;username&apos;]")' selected='false' fallback='true'></accessor>
+        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="form-control inputField-customizable"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div/div/div/div[2]/div/form/div/input&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='RelativeXPath' value='byXPath("id(&apos;username&apos;)")' selected='false' fallback='true'></accessor>
+        <accessor type='Attribute' value='textbox({&apos;type&apos;:&apos;text&apos;})' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;input[class="form-control inputField-customizable"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;#username&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;input[name="username"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;input[value=""]&apos;)' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='setValue' value='$B_Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ab5824c0-e8ed-4e7f-9cd6-aaec0ce966d7' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e4a3ff36-edef-41be-b3ee-da3307d51394' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='AttrClass' value='submit("btn btn-primary submitButton-customizable")' selected='true' fallback='true'></accessor>
+        <accessor type='XPathName' value='byXPath(&apos;//*[@name="signInSubmitButton"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='AttrName' value='submit("signInSubmitButton")' selected='false' fallback='true'></accessor>
+        <accessor type='AttrValue' value='submit("Sign in")' selected='false' fallback='true'></accessor>
+        <accessor type='XPath' value='byXPath(&apos;//div/div/div/div[2]/div/form/input[2]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="btn btn-primary submitButton-customizable"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div/div/div/div[2]/div/form/input[2]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='RelativeXPath' value='byXPath("/html[1]/body[1]/div[@class=&apos;container&apos;]/div[@class=&apos;modal-dialog&apos;]/div[@class=&apos;modal-content background-customizable modal-content-mobile&apos;]/div[@class=&apos;modal-body&apos;]/div[1]/form[@class=&apos;cognito-asf&apos;]/input[@class=&apos;btn btn-primary submitButton-customizable&apos;]")' selected='false' fallback='true'></accessor>
+        <accessor type='Attribute' value='submit({&apos;type&apos;:&apos;Submit&apos;})' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;form[class="cognito-asf"] &gt; input[class="btn btn-primary submitButton-customizable"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;.cognito-asf &gt; .btn.btn-primary.submitButton-customizable&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;form[name="cognitoSignInForm"] &gt; input[name="signInSubmitButton"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;input[value="Sign in"]&apos;)' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='bbf6b4b8-6377-4afe-9fdc-1ca960c88ebc' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='98b36c41-04ee-42cf-ba9f-cd476767296a' uiType='conditional'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='url="https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='fe39edfb-e4b3-4289-894d-b985ab8461ef' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='(//button[@type=&apos;button&apos;])[2]' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='"url"' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='"anyString"' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='else' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='5a1c06e7-b40f-4a2b-9467-9f011a592ad7' uiType='conditional'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='setValue' value='$A_Username' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='f99604c6-0207-4b2b-9377-9322c0f8b77f' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='setValue' value='$B_Password' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='a30619a6-c175-4863-b485-e90063e1cf42' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='7ce983e1-b843-4db8-88d0-b0750a8e85f6' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='submit("btn btn-primary submitButton-customizable")' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='faf5a302-dee3-406d-96ce-a7e47a80f3f2' uiType='end' sibling='eca71abf-d540-46d1-8316-9635939ea9c6'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='while' value='$A_Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='69cc422d-091d-4d1a-bfd8-7e5c77f9a390' uiType='conditional'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='Url="https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='Url=https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='$Url=true' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='$Url=false' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='$Username' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='$' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='$Url==false' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='$url==false' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='$url' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='url!=https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='url!=' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='url="https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='ur' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='9c0d8b07-fb77-4d46-9f3c-28154a87fc21' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='setValue' value='$A_Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='fa366833-c3a3-4549-8278-dad27236d36f' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='setValue' value='$B_Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='6b9aedce-8841-409e-87ad-532abb67d58a' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='12609f22-9d3a-495b-a1c6-742cd0127a95' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='submit("btn btn-primary submitButton-customizable")' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='endWhile' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='bdf493c0-5125-46ba-b048-626bae287235' uiType='end' sibling='69cc422d-091d-4d1a-bfd8-7e5c77f9a390'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='da5a0b53-301b-4c9d-b1e8-fc675a6139ab' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+  </testcase>
