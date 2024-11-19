@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testcase   name= 'Script_1.ds' description= '' author= 'Mohanraj_Seerangan_CAYUSE@appvance.com' version= ''>
-<dpl filename='' exectype='runnextstep' errorhandling='' type='HashDPL' locale='en_US'/>
+<dpl filename='{ds}/Login_credentialwithURL.csv' exectype='runnextstep' errorhandling='' type='SyntheticDPL' locale='en_US'/>
 <fallback useFallback='true'/>
 <shadowDOM useShadowDOM='true'/>
 <step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
