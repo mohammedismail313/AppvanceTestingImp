@@ -12,7 +12,7 @@
         <accessor type='filePath' value='"{ds}/Login_Credentials.csv"' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='store' value='{ds}/Login_Credentials.csv' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='73218c35-8c80-462d-871c-ce95bac50f21' uiType='base'>
+    <step action='store' value='"{ds}/Login_Credentials.csv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='73218c35-8c80-462d-871c-ce95bac50f21' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='y' selected='true' fallback='true'></accessor>
       </dialect>
@@ -43,7 +43,7 @@
         <accessor type='unknown' value='submit("btn btn-primary submitButton-customizable")' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='store' value='y+1' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='961ee51c-7f6a-41cc-a186-4a84207d964d' uiType='base'>
+    <step action='store' value='y++' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='961ee51c-7f6a-41cc-a186-4a84207d964d' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='y' selected='true' fallback='true'></accessor>
       </dialect>
