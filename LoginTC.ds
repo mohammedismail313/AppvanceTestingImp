@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<<<<<<< HEAD
 <testcase   name= 'LoginTC.ds' description= '' author= 'Mohanraj_Seerangan_CAYUSE@appvance.com' version= ''>
 <dpl filename='{ds}/Login_Credentials.csv' exectype='runspecificstep3' errorhandling='' type='HashDPL' locale='en_US'/>
 <fallback useFallback='true'/>
@@ -34,3 +35,85 @@
 </dialect>
 </step>
 </testcase>
+=======
+  <testcase name='' description='script generated from Web Designer' author='Mohammed_Muthu_CAYUSE@appvance.com' version='webDesigner'>
+    <dpl filename='{ds}/Login_Credentials.csv' exectype='runspecificstep3' errorhandling='' type='HashDPL' locale='en_US'></dpl>
+    <fallback useFallback='true'></fallback>
+    <shadowDOM useShadowDOM='true'></shadowDOM>
+    <step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6888f0c7-1af3-4ed0-8129-741d14e8e3da' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='54dca292-be90-4a18-9373-7c891eda38af' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b4f13bf4-7cd8-40c7-8fab-b6144006df67' uiType='base' isHidden='true'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0991cc81-3fa9-43dd-bb44-cddf9f85fa17' uiType='base' isHidden='true'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='4d061888-a94c-4ae5-885b-58a1d9035243' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@name="signInSubmitButton"]&apos;)' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='74469ace-9085-4913-bd11-a08277e357e5' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='' value='' selected='true' fallback='false'></accessor>
+      </dialect>
+    </step>
+    <step action='assertContainsText' value='"FT 1"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='55232dee-f7ff-43e7-b841-a2de42a3992a' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='Text' value='span("FT 1")' selected='true' fallback='true'></accessor>
+        <accessor type='Text' value='span("FT 1")' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e304ac8b-b35c-4def-8627-dccd8d919ef6' uiType='conditional'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='assertContainsText (span("FT 1"));' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='assertContainsText (span("FT 1"))' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='store' value='"Valid Log in"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='952aa9c0-02a3-4f1c-b78a-3deacd09296c' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='result' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='else' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c5895fec-7a9d-41dc-97c0-75c2eb9a8226' uiType='conditional'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='store' value='"invalid log in"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='1f86470a-1392-4766-b44c-ab9b002daaa9' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='result' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='a2945940-8b01-4794-93b2-7443cf4f1634' uiType='end' sibling='c5895fec-7a9d-41dc-97c0-75c2eb9a8226'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='log' value='result' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='06a05d03-1032-40ff-9f3f-85e590a6dc20' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='71b5fe20-f741-42c8-9ef5-aeae3dfcffcb' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='22e8a901-38b4-49a0-bfec-f580984fb087' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0be8626c-ab10-4c8d-8d6f-d609365371b0' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='7dc990a8-4a55-4d92-b675-62a7cf7e735b' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+  </testcase>
+>>>>>>> branch 'main' of https://github.com/MohammedIsmail03/AppvanceTesting
