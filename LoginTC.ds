@@ -1,106 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
-  <testcase name='' description='script generated from Web Designer' author='Mohanraj_Seerangan_CAYUSE@appvance.com' version='webDesigner'>
-    <dpl filename='{ds}/Login_Credentials.csv' exectype='runspecificstep3' errorhandling='' type='HashDPL' locale='en_US'></dpl>
-    <fallback useFallback='true'></fallback>
-    <shadowDOM useShadowDOM='true'></shadowDOM>
-    <step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6888f0c7-1af3-4ed0-8129-741d14e8e3da' uiType='base'>
-      <dialect type='sahi'></dialect>
-    </step>
-    <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='54dca292-be90-4a18-9373-7c891eda38af' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='store' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='1b268708-d789-4c8f-9a16-b8ae37267b29' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='name' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='log' value='name' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ab070d0f-e984-4a74-8db0-b2730b66d2fd' uiType='base'>
-      <dialect type='sahi'></dialect>
-    </step>
-    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b4f13bf4-7cd8-40c7-8fab-b6144006df67' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0991cc81-3fa9-43dd-bb44-cddf9f85fa17' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='4d061888-a94c-4ae5-885b-58a1d9035243' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@name="signInSubmitButton"]&apos;)' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e04893e4-1505-42d2-ac66-3dc51a854078' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='' value='' selected='true' fallback='false'></accessor>
-      </dialect>
-    </step>
-    <step action='assertExists' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='672d51b3-491a-4cb3-90ef-0f6d1fe8ce8f' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Text' value='span("FT 1")' selected='true' fallback='true'></accessor>
-        <accessor type='Text' value='span("FT 1")' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='assertContainsText' value='"FT 1"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e76dd4f7-a262-48ef-bce8-d15a156347b2' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Text' value='span("FT 1")' selected='true' fallback='true'></accessor>
-        <accessor type='Text' value='span("FT 1")' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='assertTextPresent' value='"FT 1"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='f5c20731-0a66-4167-b303-50f801a51c16' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Text' value='span("FT 1")' selected='true' fallback='true'></accessor>
-        <accessor type='Text' value='span("FT 1")' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='64ded467-f342-421a-a5b0-3eeb293aae1f' uiType='conditional'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='assertContainsText("FT 1")' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='assertExists("FT 1")' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertTextPresent(("FT 1"))' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContains(span("FT 1"))' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContainsText(span("FT 1"))' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContainsText("FT 1");' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertTextPresent("FT 1");' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContainsText(span("FT 1"));' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='asserContainsText(span("FT 1"));' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='asserContainsText(span("FT 1"))' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='asserContainsText("FT 1")' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assercontainstext("FT 1");' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assercontainstext("FT 1")' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assercontainstext()' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assercontainstext' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='store' value='"Logged as ft1 user"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='9fcc67ed-6a40-4e18-8093-4eefa1c0e3bd' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='result' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='else' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='f540f953-56fb-4ec3-a4bb-a588027d61af' uiType='conditional'>
-      <dialect type='sahi'></dialect>
-    </step>
-    <step action='store' value='"Invalid login"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='2eee494b-fcad-414c-9d09-2e8cb765f045' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='result' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b950f06a-6bfa-4fa4-bdc9-fd0d703558f0' uiType='end' sibling='f540f953-56fb-4ec3-a4bb-a588027d61af'>
-      <dialect type='sahi'></dialect>
-    </step>
-    <step action='log' value='result' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='41b06bb1-5ac0-42f8-8416-453adb8d7e83' uiType='base'>
-      <dialect type='sahi'></dialect>
-    </step>
-    <step action='log' value='result' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0e062bd2-cd01-4b2d-afcd-2e5d130e15f0' uiType='base'>
-      <dialect type='sahi'></dialect>
-    </step>
-    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='632355dd-2f75-46f5-88e1-863a7ebd58fd' uiType='base'>
-      <dialect type='sahi'></dialect>
-    </step>
-  </testcase>
+<testcase   name= 'LoginTC.ds' description= '' author= 'Mohanraj_Seerangan_CAYUSE@appvance.com' version= ''>
+<dpl filename='{ds}/Login_Credentials.csv' exectype='runspecificstep3' errorhandling='' type='HashDPL' locale='en_US'/>
+<fallback useFallback='true'/>
+<shadowDOM useShadowDOM='true'/>
+<step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='' fallback='false' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;username&quot;]&apos;)' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;password&quot;]&apos;)' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;password&quot;]&apos;)' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='byXPath(&apos;//*[@name=&quot;signInSubmitButton&quot;]&apos;)' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests "' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='' fallback='false' selected='true'/>
+</dialect>
+</step>
+</testcase>
