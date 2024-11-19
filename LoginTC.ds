@@ -26,7 +26,7 @@
         <accessor type='unknown' value='byXPath(&apos;//*[@name="signInSubmitButton"]&apos;)' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='assertContainsText' value='"FT 1"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='be357cef-c7ac-4dd7-be44-9c367d7c3934' uiType='base'>
+    <step action='verifyContainsText' value='"FT 1"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='be357cef-c7ac-4dd7-be44-9c367d7c3934' uiType='base'>
       <dialect type='sahi'>
         <accessor type='Text' value='span("FT 1")' selected='true' fallback='true'></accessor>
         <accessor type='Text' value='span("FT 1")' selected='false' fallback='true'></accessor>
@@ -34,12 +34,13 @@
     </step>
     <step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ce88160f-cb70-42c5-9b28-79dcd7c09331' uiType='conditional'>
       <dialect type='sahi'>
+        <accessor type='unknown' value='verifyContainsText (span("FT 1"));' selected='true' fallback='true'></accessor>
         <accessor type='unknown' value='assertContainsText (span("FT 1"))' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='assertTextPresent (span("FT 1"))' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='assertTextPresent ("FT 1")' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='assertContainsText ("FT 1")' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='assertContainsText ("FT 1");' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContainsText (span("FT 1"));' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='assertContainsText (span("FT 1"));' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='assertContainsText span("FT 1");' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='assertContainsText span("FT 1")' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='assertContainsText ' selected='false' fallback='true'></accessor>
