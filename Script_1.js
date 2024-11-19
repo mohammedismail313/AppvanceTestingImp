@@ -6,7 +6,9 @@ setShadowDOM(true);
 navigateTo("https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&response_type=CODE&state&nonce&auth_error=false");
 addSyntheticDPL("{ds}/Login_Credentials.csv",0);
 var y="{ds}/Login_Credentials.csv";
-while (y<0){
+var x=y.length;
+console.log(x)
+while (y.){
    setValue(fallback(`byXPath('//*[@id="username"]')`),$Username);
    setValue(fallback(`byXPath('//*[@id="password"]')`),$Password);
    click(fallback(`submit("btn btn-primary submitButton-customizable")`));
