@@ -7,37 +7,9 @@ navigateTo("https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70
 addSyntheticDPL("{ds}/Login_Credentials.csv",0);
 
 var y = "{ds}/Login_Credentials.csv";
-
-
-fetch(y)
-  .then(response => response.text())  
-  .then(csvText => {
-   
-    const rows = csvText.split('\n');
-    
-    // Initialize an array to store the credentials
-    const credentials = [];
-
-    
-    rows.forEach(row => {
-      if (row.trim() !== "") {  
-        const columns = row.split(',');  
-        
-        
-        const name = columns[0].trim();  
-        const password = columns[1].trim();  
-        
-       
-        credentials.push({ name, password });
-      }
-    });
-
-    
-    console.log(credentials);
-  })
-  .catch(error => {
-    console.error('Error reading the CSV file:', error);
-  });
+store in locker "y" ="{ds}/Login_Credentials.csv";
+retrieve from locker x="y";
+console.log(x);
 
 // var x=y.length;
 // console.log(x);
