@@ -8,7 +8,7 @@ addSyntheticDPL("{ds}/Login_Credentials.csv",0);
 var y="{ds}/Login_Credentials.csv";
 var x=y.length;
 console.log(x);
-while (y.){
+while (y.length>0){
    setValue(fallback(`byXPath('//*[@id="username"]')`),$Username);
    setValue(fallback(`byXPath('//*[@id="password"]')`),$Password);
    click(fallback(`submit("btn btn-primary submitButton-customizable")`));
