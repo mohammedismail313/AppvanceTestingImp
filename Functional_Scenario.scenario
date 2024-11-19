@@ -30,10 +30,9 @@
   </basics>
   <resources>
     <resource name="LoginTC.ds" type="ds" path="{scenario}/LoginTC.ds"/>
-    <resource name="Login_Credentials.csv" type="csv" path="{scenario}/Login_Credentials.csv"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="https://training.appvance.net:/TMServer/ws/TestNode"/>
+    <node name="localhost" location="https://training.appvance.net:/TMServer/ws/TestNode" username="Mohanraj_Seerangan_CAYUSE@appvance.com" password="OlO/T8pGnulEAuWcwxVgrQ2Lrl6c4UoMXdIDOkc5v1c="/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -41,13 +40,7 @@
     <bundle name="oracle" version="10.2.0.5"/>
     <bundle name="ds" version="3.0"/>
   </bundles>
-  <datasources>
-    <dpl name="Untitled1" type="HashDPL" langtype="java" method="setup">
-      <argument name="resource" dpl="Resources" method="getResourceByName">
-        <argument name="file" value="Login_Credentials.csv"/>
-      </argument>
-    </dpl>
-  </datasources>
+  <datasources/>
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
@@ -155,7 +148,16 @@
   </options>
   <templates>
     <controller name="Iteration1">
-      <round iterations="1" totalusers="1"/>
+      <round iterations="1" totalusers="4"/>
+    </controller>
+    <controller name="Iteration2">
+      <round iterations="1" totalusers="4"/>
+    </controller>
+    <controller name="Iteration3">
+      <round iterations="1" totalusers="4"/>
+    </controller>
+    <controller name="Iteration4">
+      <round iterations="1" totalusers="4"/>
     </controller>
     <testcase name="Testcase1" importance="normal">
       <test>
@@ -172,6 +174,7 @@
           <argument name="Untitled4" method="getDataByIndex" dpl="Untitled1">
             <argument name="index" value="3"/>
           </argument>
+          <argument name="Untitled1" method="getData" dpl="TheLocker"/>
         </run>
       </test>
     </testcase>
@@ -181,6 +184,15 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="functionaltest" subtype="functional">
     <iteration name="Iteration1" controller="Iteration1">
+      <testcase name="Testcase1" users="1" totalexecutions="1"/>
+    </iteration>
+    <iteration name="Iteration2" controller="Iteration2" completiontype="totalexecutions">
+      <testcase name="Testcase1" users="1" totalexecutions="1"/>
+    </iteration>
+    <iteration name="Iteration3" controller="Iteration3" completiontype="totalexecutions">
+      <testcase name="Testcase1" users="1" totalexecutions="1"/>
+    </iteration>
+    <iteration name="Iteration4" controller="Iteration4" completiontype="totalexecutions">
       <testcase name="Testcase1" users="1" totalexecutions="1"/>
     </iteration>
   </execution>
