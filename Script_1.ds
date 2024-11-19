@@ -6,6 +6,14 @@
     <step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6dc3e5bf-be79-41e9-bb1a-f7f6652bac9a' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
+    <step action='store' value='{ds}/Diff_UserLogin.csv' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='3a31221b-c51d-4774-a31d-e823ed3f1499' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='data' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='log' value='data' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='d49aae6b-e390-410b-b0ef-ebfbd9a85f19' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
     <step action='setValue' value='$User1name' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6bf0c59d-219c-499d-81d6-ad61cb143a7b' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
