@@ -53,7 +53,7 @@
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='store' value='true' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='a5e0cb29-25a7-4282-bb54-2b6d2d39d0d0' uiType='base'>
+    <step action='store' value='"Valid user"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='a5e0cb29-25a7-4282-bb54-2b6d2d39d0d0' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='result' selected='true' fallback='true'></accessor>
       </dialect>
@@ -61,7 +61,7 @@
     <step action='else' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ffdff0af-6cb9-49b3-9350-44eed59a28e1' uiType='conditional'>
       <dialect type='sahi'></dialect>
     </step>
-    <step action='store' value='false' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='09cc82db-8c9b-425c-8ebc-f55582f097fc' uiType='base'>
+    <step action='store' value='"invaid user"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='09cc82db-8c9b-425c-8ebc-f55582f097fc' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='result' selected='true' fallback='true'></accessor>
       </dialect>
