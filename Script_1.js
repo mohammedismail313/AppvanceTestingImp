@@ -6,8 +6,39 @@ setShadowDOM(true);
 navigateTo("https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&response_type=CODE&state&nonce&auth_error=false");
 addSyntheticDPL("{ds}/Login_Credentials.csv",0);
 
-var y="{ds}/Login_Credentials.csv";
-console.log(y);
+var y = "{ds}/Login_Credentials.csv";
+
+
+fetch(y)
+  .then(response => response.text())  
+  .then(csvText => {
+   
+    const rows = csvText.split('\n');
+    
+    // Initialize an array to store the credentials
+    const credentials = [];
+
+    
+    rows.forEach(row => {
+      if (row.trim() !== "") {  
+        const columns = row.split(',');  
+        
+        
+        const name = columns[0].trim();  
+        const password = columns[1].trim();  
+        
+       
+        credentials.push({ name, password });
+      }
+    });
+
+    
+    console.log(credentials);
+  })
+  .catch(error => {
+    console.error('Error reading the CSV file:', error);
+  });
+
 // var x=y.length;
 // console.log(x);
 // while (y.length>0){
