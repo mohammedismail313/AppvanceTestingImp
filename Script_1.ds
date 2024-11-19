@@ -61,7 +61,7 @@
         <accessor type='unknown' value='submit("btn btn-primary submitButton-customizable")' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='js' value='i++' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='a9e9ce4a-e0c3-4e8f-b630-16afaf4dd192' uiType='base'>
+    <step action='js' value='i++;' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='a9e9ce4a-e0c3-4e8f-b630-16afaf4dd192' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
     <step action='endWhile' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='f8f1dd1a-923d-4710-845b-bb7dc8941ea5' uiType='end' sibling='80ceb2c8-3655-4fbc-8c8b-a54f3e2f3329'>
