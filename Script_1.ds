@@ -1,70 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
   <testcase name='' description='script generated from Web Designer' author='Mohanraj_Seerangan_CAYUSE@appvance.com' version='webDesigner'>
-    <dpl filename='{ds}/Login_Credentials.csv' exectype='runnextstep' errorhandling='' type='HashDPL' locale='en_US'></dpl>
+    <dpl filename='{ds}/Login_Credentials.csv' exectype='runnextstep' errorhandling='' type='SyntheticDPL' locale='en_US'></dpl>
     <fallback useFallback='true'></fallback>
     <shadowDOM useShadowDOM='true'></shadowDOM>
     <step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6dc3e5bf-be79-41e9-bb1a-f7f6652bac9a' uiType='base'>
-      <dialect type='sahi'></dialect>
-    </step>
-    <step action='addSyntheticDPL' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='a5796471-8901-4ba1-8d1e-8a7b3367c0b5' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='filePath' value='"{ds}/Login_credentialwithURL.csv"' selected='false' fallback='true'></accessor>
-        <accessor type='filePath' value='"{ds}/Login_Credentials.csv"' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='store' value='"{ds}/Login_Credentials.csv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='73218c35-8c80-462d-871c-ce95bac50f21' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='"y"' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='y' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='store' value='y' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='56f399a3-4082-444f-bc0c-fa90a0622b27' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='data' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='x' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='store' value='0' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b676acab-da8f-4664-9e41-242e4ddc1ca3' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='i' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='while' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='80ceb2c8-3655-4fbc-8c8b-a54f3e2f3329' uiType='conditional'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='i&lt;data.length' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='data&lt;le' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='y.length&lt;5' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='y&lt;0' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='y&gt;=0' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='y&gt;' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='y&gt;0' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='y=true' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='Login_Crendentials.length()&gt;)' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='Login_Crendentials.length()&gt;0' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='61e62f04-63bc-4b6a-a72b-1dd94be05bd6' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='d3155a7a-5af5-49f6-84fb-a22d771b0441' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='b174d37f-4ff5-475c-803b-4cbc042d2492' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='submit("btn btn-primary submitButton-customizable")' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='js' value='i++' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='a9e9ce4a-e0c3-4e8f-b630-16afaf4dd192' uiType='base'>
-      <dialect type='sahi'></dialect>
-    </step>
-    <step action='endWhile' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='f8f1dd1a-923d-4710-845b-bb7dc8941ea5' uiType='end' sibling='80ceb2c8-3655-4fbc-8c8b-a54f3e2f3329'>
       <dialect type='sahi'></dialect>
     </step>
     <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6bf0c59d-219c-499d-81d6-ad61cb143a7b' uiType='base'>
@@ -85,7 +24,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;input[value=""]&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ab5824c0-e8ed-4e7f-9cd6-aaec0ce966d7' uiType='base'>
+    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ab5824c0-e8ed-4e7f-9cd6-aaec0ce966d7' uiType='base' isHidden='true'>
       <dialect type='sahi'>
         <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
       </dialect>
