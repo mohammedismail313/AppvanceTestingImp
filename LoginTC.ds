@@ -40,7 +40,8 @@
     </step>
     <step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e304ac8b-b35c-4def-8627-dccd8d919ef6' uiType='conditional'>
       <dialect type='sahi'>
-        <accessor type='unknown' value='assertContainsText (span("FT 1"))' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='assertContainsText (span("FT 1"));' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='assertContainsText (span("FT 1"))' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
