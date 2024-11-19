@@ -50,7 +50,7 @@
         <accessor type='Text' value='span("Site: Master")' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='store' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='5d054177-bcb5-4ab8-9219-bf09e1c1737e' uiType='base'>
+    <step action='store' value='"Site: Master"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='5d054177-bcb5-4ab8-9219-bf09e1c1737e' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='dd' selected='true' fallback='true'></accessor>
       </dialect>
