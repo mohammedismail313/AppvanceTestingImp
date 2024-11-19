@@ -158,6 +158,9 @@
       <test>
         <run name="Untitled1" langtype="ds3" resource="LoginTC.ds" method="ds" testclass="Chrome">
           <argument name="Untitled1" method="getNextData" dpl="Untitled1"/>
+          <argument name="Untitled2" method="getNextData" dpl="Untitled1"/>
+          <argument name="Untitled3" method="getNextData" dpl="Untitled1"/>
+          <argument name="Untitled4" method="getNextData" dpl="Untitled1"/>
         </run>
       </test>
     </testcase>
