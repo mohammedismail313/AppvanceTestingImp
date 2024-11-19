@@ -26,11 +26,6 @@
         <accessor type='unknown' value='byXPath(&apos;//*[@name="signInSubmitButton"]&apos;)' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='8921be6b-2483-4634-b519-feb7e4b50f21' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='' value='' selected='true' fallback='false'></accessor>
-      </dialect>
-    </step>
     <step action='assertContainsText' value='"FT 1"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='be357cef-c7ac-4dd7-be44-9c367d7c3934' uiType='base'>
       <dialect type='sahi'>
         <accessor type='Text' value='span("FT 1")' selected='true' fallback='true'></accessor>
