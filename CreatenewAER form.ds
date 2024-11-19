@@ -50,29 +50,44 @@
         <accessor type='Text' value='span("Site: Master")' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
+    <step action='store' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='5d054177-bcb5-4ab8-9219-bf09e1c1737e' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='dd' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='log' value='dd' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e9317cc3-91fc-49cf-9a18-55eb99b28d27' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
     <step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0fa73f06-9b20-473b-ba1f-76ec3552ffb5' uiType='conditional'>
       <dialect type='sahi'>
-        <accessor type='unknown' value='assert Contains Text=true' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='a' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='assert Contains Text=true' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='Assert Contains Text=true' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='Assert Contains Text==true' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='Asser Contains Text==true' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='6d70a335-2c58-42c1-8ba6-0654514a45e0' uiType='base'>
+    <step action='store' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='2c441c2e-b688-477e-823c-8ffb1239e00a' uiType='base'>
       <dialect type='sahi'>
-        <accessor type='unknown' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='dd' selected='true' fallback='true'></accessor>
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='6212aac0-90b2-4b7b-a914-9ef089a4a023' uiType='base'>
+    <step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='45e928a9-2866-40ff-abb0-c6ddd087e049' uiType='end' sibling='0fa73f06-9b20-473b-ba1f-76ec3552ffb5'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='311fce0e-c9a9-4969-8a0c-26049d3aa531' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='link(0, _in(listItem("option-2222")))' selected='true' fallback='true'></accessor>
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='9647c53b-fc38-4004-9ca2-6e7322c0b52f' uiType='end' sibling='0fa73f06-9b20-473b-ba1f-76ec3552ffb5'>
-      <dialect type='sahi'></dialect>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0128f162-d505-4b1c-8bee-749737915185' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
     </step>
     <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='cc848750-1930-4219-85f0-e2db5ee55a32' uiType='base'>
       <dialect type='sahi'>
