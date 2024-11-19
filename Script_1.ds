@@ -93,7 +93,8 @@
     </step>
     <step action='while' value='$Url' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='69cc422d-091d-4d1a-bfd8-7e5c77f9a390' uiType='conditional'>
       <dialect type='sahi'>
-        <accessor type='unknown' value='$Url=false' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='$Url=true' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='$Url=false' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='$Username' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='$' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='$Url==false' selected='false' fallback='true'></accessor>
