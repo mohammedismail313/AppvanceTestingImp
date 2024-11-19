@@ -1,11 +1,41 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testcase  name= '' description='' author='' version=''>
-<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL' locale=''/>
-<fallback useFallback='true'/>
-<shadowDOM useShadowDOM='true'/>
-<step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='' value='' selected='true'/>
-</dialect>
-</step>
-</testcase>
+  <testcase name='' description='script generated from Web Designer' author='Mohanraj_Seerangan_CAYUSE@appvance.com' version='webDesigner'>
+    <dpl filename='{ds}/Login_Credentials.csv' exectype='runspecificstep03' errorhandling='' type='HashDPL' locale='en_US'></dpl>
+    <fallback useFallback='true'></fallback>
+    <shadowDOM useShadowDOM='true'></shadowDOM>
+    <step action='addHashDPL' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='79cad1cc-a0fc-4f57-9e89-1ad95000ae8e' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='filePath' value='"{ds}/URL.csv"' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='navigateTo' value='$tenent_url' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6e1aa87f-e53b-475c-9814-7fd7fd547048' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='46924524-349f-464c-86de-c438b7869796' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='cf38f6e8-a7a8-4e46-9028-3a8b2d068e65' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='2cb580c3-5dae-4084-bb1c-7720d68dbd90' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e13c622f-8605-490e-9320-4cf7d41b3ca3' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='submit("btn btn-primary submitButton-customizable")' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='navigateTo' value='$tenent_url' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='f0203187-55c2-4e92-8ffc-7a9a7757e6d7' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+  </testcase>
