@@ -29,10 +29,11 @@
     <userinfo/>
   </basics>
   <resources>
-    <resource name="CreatenewAER form.ds" type="ds" path="REPOSITORY/Appvance_Testing/CreatenewAER form.ds"/>
+    <resource name="LoginTC.ds" type="ds" path="{scenario}/LoginTC.ds"/>
+    <resource name="Login_Credentials.csv" type="csv" path="{scenario}/Login_Credentials.csv"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="https://training.appvance.net:/TMServer/ws/TestNode"/>
+    <node name="localhost" location="https://training.appvance.net:/TMServer/ws/TestNode" password="OlO/T8pGnulEAuWcwxVgrQ2Lrl6c4UoMXdIDOkc5v1c="/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -40,7 +41,13 @@
     <bundle name="oracle" version="10.2.0.5"/>
     <bundle name="ds" version="3.0"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="Untitled1" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="Login_Credentials.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
@@ -50,7 +57,7 @@
       <opt name="ConsoleAsProxy" value="false"/>
     </options>
     <options type="reporting">
-      <opt name="summaryType" value="complete"/>
+      <opt name="summaryType" value="testCaseOnly"/>
       <opt name="DynamicParameterList" value="[{&quot;regexIn&quot;:&quot;(_|t|v|_t|_v|hash|cid|id|pid|cb|crc|page|p|t|s|u|pageindex|pageId)=[0-9\\.]+&quot;,&quot;stringOut&quot;:&quot;_=0&quot;},{&quot;regexIn&quot;:&quot;(time|date|t|d|id|cid|cb|_|utc|sn|state|app|sessionID|s|q|search|query|pid|tid|key|token|_u|gtm|z)=[0-9a-zA-Z\\/\\s\\:\\.\\_\\-]+&quot;,&quot;stringOut&quot;:&quot;_=0&quot;},{&quot;regexIn&quot;:&quot;\\?[0-9a-z]+&quot;,&quot;stringOut&quot;:&quot;?0&quot;}]"/>
     </options>
     <options type="apc">
@@ -126,9 +133,6 @@
     </options>
     <options type="jira">
       <opt name="useJira" value="false"/>
-      <opt name="jiraIssueTypes" value="[object Object]"/>
-      <opt name="jiraFailure" value="[object Object]"/>
-      <opt name="jiraSuccess" value="[object Object]"/>
     </options>
     <options type="lr">
       <opt name="saveCompleteLrOutputLog" value="false"/>
@@ -152,8 +156,8 @@
     </controller>
     <testcase name="Testcase1" importance="normal">
       <test>
-        <run name="LoginScenariousingDPL" langtype="ds3" resource="Appvance_Testing/CreatenewAER form.ds" method="ds" testclass="Chrome">
-          <argument name="Untitled1" method="getData" dpl="Untitled1"/>
+        <run name="Untitled1" langtype="ds3" resource="LoginTC.ds" method="ds" testclass="Chrome">
+          <argument name="Untitled1" method="getNextData" dpl="Untitled1"/>
         </run>
       </test>
     </testcase>
