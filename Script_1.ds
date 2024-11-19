@@ -18,7 +18,7 @@
         <accessor type='unknown' value='y' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='locker' value='y;' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='56f399a3-4082-444f-bc0c-fa90a0622b27' uiType='base'>
+    <step action='store' value='y;' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='56f399a3-4082-444f-bc0c-fa90a0622b27' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='data' selected='true' fallback='true'></accessor>
         <accessor type='unknown' value='x' selected='false' fallback='true'></accessor>
