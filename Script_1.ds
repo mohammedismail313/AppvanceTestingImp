@@ -21,6 +21,14 @@
     <step action='log' value='value' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='d49aae6b-e390-410b-b0ef-ebfbd9a85f19' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
+    <step action='store' value='value.replace(/[0-g)."")' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c83052c9-cd60-4e4d-9532-41c80e3f5a03' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='value1' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='log' value='value1' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='249d1f34-d633-4a13-ad86-fbfe5247daad' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
     <step action='setValue' value='$User1name' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6bf0c59d-219c-499d-81d6-ad61cb143a7b' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathId' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
