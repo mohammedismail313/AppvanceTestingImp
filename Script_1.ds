@@ -37,6 +37,16 @@
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='b174d37f-4ff5-475c-803b-4cbc042d2492' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='submit("btn btn-primary submitButton-customizable")' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='store' value='y+1' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='961ee51c-7f6a-41cc-a186-4a84207d964d' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='y' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
     <step action='endWhile' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='f8f1dd1a-923d-4710-845b-bb7dc8941ea5' uiType='end' sibling='80ceb2c8-3655-4fbc-8c8b-a54f3e2f3329'>
       <dialect type='sahi'></dialect>
     </step>
