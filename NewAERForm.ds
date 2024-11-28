@@ -179,24 +179,7 @@
     <step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c44daac9-78dc-43ea-adcd-9e1c5b09eda0' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
-    <step action='setValue' value='$RI_address' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='64b96255-17e4-4ad2-8ea6-14853c3acaee' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='div(0, _in(listItem("sq_100i_listc159c5c5-12a1-4712-a872-11a0b89fb3b5"))).xy(0.19, 0.15 )' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='div(0, _in(listItem({&apos;id&apos;:&apos;sq_100i_listc159c5c5-12a1-4712-a872-11a0b89fb3b5&apos;}))).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
-        <accessor type='AttrTitle' value='div("Rainy Day Labs").xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='div("sd-list__item-body sv-list__item-body").xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
-        <accessor type='Text' value='div("Rainy Day Labs").xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//li[@id=&apos;sq_100i_listc159c5c5-12a1-4712-a872-11a0b89fb3b5&apos;]/div").xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sv-list__item-body sd-list__item-body"]&apos;).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div[2]/div/div/div/div/div/div/ul/li/div&apos;).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_100i_listc159c5c5-12a1-4712-a872-11a0b89fb3b5&apos;)/div[@class=&apos;sv-list__item-body sd-list__item-body&apos;]").xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='div({&apos;style&apos;:&apos;padding-inline-start: 16px;&apos;}).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[title="Rainy Day Labs"]&apos;).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sv-popup__content"] &gt; div[class="sv-list__container sd-list"] &gt; ul[class="sv-list"] &gt; li[class="sv-list__item sd-list__item sv-list__item--hovered sv-list__item-text--wrap"] &gt; div[class="sv-list__item-body sd-list__item-body"]&apos;).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_100i_listc159c5c5-12a1-4712-a872-11a0b89fb3b5 &gt; .sv-list__item-body.sd-list__item-body&apos;).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='f9a155e6-a31e-4fb3-bd41-a55f409c6e9b' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6826fb13-415d-410e-bed1-91a4ac9d0a39' uiType='base'>
       <dialect type='sahi'>
         <accessor type='Parent' value='div(0, _in(div("sq_101i"))).xy(0.45, 0.67 )' selected='true' fallback='true'></accessor>
         <accessor type='Parent' value='div(0, _in(div({&apos;aria-label&apos;:&apos;Receiving Institution Shipping Address&apos;}))).xy(0.45, 0.67 )' selected='false' fallback='true'></accessor>
@@ -206,6 +189,23 @@
         <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_101i&apos;)/div[@class=&apos;sd-dropdown__value&apos;]").xy(0.45, 0.67 )' selected='false' fallback='true'></accessor>
         <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-element__content sd-question__content"] &gt; div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"]&apos;).xy(0.45, 0.67 )' selected='false' fallback='true'></accessor>
         <accessor type='JQuery' value='byJQuery(&apos;#sq_101i &gt; .sd-dropdown__value&apos;).xy(0.45, 0.67 )' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='setValue' value='$RI_address' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='64b96255-17e4-4ad2-8ea6-14853c3acaee' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='XPath' value='byXPath("//li[@id=&apos;sq_100i_listc159c5c5-12a1-4712-a872-11a0b89fb3b5&apos;]/div").xy(0.19, 0.15 )' selected='true' fallback='true'></accessor>
+        <accessor type='Parent' value='div(0, _in(listItem("sq_100i_listc159c5c5-12a1-4712-a872-11a0b89fb3b5"))).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
+        <accessor type='Parent' value='div(0, _in(listItem({&apos;id&apos;:&apos;sq_100i_listc159c5c5-12a1-4712-a872-11a0b89fb3b5&apos;}))).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
+        <accessor type='AttrTitle' value='div("Rainy Day Labs").xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
+        <accessor type='AttrClass' value='div("sd-list__item-body sv-list__item-body").xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
+        <accessor type='Text' value='div("Rainy Day Labs").xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
+        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sv-list__item-body sd-list__item-body"]&apos;).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
+        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div[2]/div/div/div/div/div/div/ul/li/div&apos;).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
+        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_100i_listc159c5c5-12a1-4712-a872-11a0b89fb3b5&apos;)/div[@class=&apos;sv-list__item-body sd-list__item-body&apos;]").xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
+        <accessor type='Attribute' value='div({&apos;style&apos;:&apos;padding-inline-start: 16px;&apos;}).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;div[title="Rainy Day Labs"]&apos;).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;div[class="sv-popup__content"] &gt; div[class="sv-list__container sd-list"] &gt; ul[class="sv-list"] &gt; li[class="sv-list__item sd-list__item sv-list__item--hovered sv-list__item-text--wrap"] &gt; div[class="sv-list__item-body sd-list__item-body"]&apos;).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;#sq_100i_listc159c5c5-12a1-4712-a872-11a0b89fb3b5 &gt; .sv-list__item-body.sd-list__item-body&apos;).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
   </testcase>
