@@ -119,6 +119,9 @@
         <accessor type='' value='' selected='false' fallback='false'></accessor>
       </dialect>
     </step>
+    <step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='19b9be24-f335-402f-84cd-7a0888ffdacc' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
     <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='8746f588-24b2-4480-9c89-45ef05d16681' uiType='base'>
       <dialect type='sahi'>
         <accessor type='Text' value='button("+ New Export Request")' selected='true' fallback='true'></accessor>
