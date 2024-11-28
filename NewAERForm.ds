@@ -166,7 +166,7 @@
     <step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c44daac9-78dc-43ea-adcd-9e1c5b09eda0' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='fada6b52-3b08-4493-a482-8d376ec8c99e' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='fada6b52-3b08-4493-a482-8d376ec8c99e' uiType='base'>
       <dialect type='sahi'>
         <accessor type='Parent' value='textbox(0, _in(div("sq_100i")))' selected='true' fallback='true'></accessor>
         <accessor type='Parent' value='textbox(0, _in(div("sq_100i")))' selected='false' fallback='true'></accessor>
