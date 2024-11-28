@@ -163,7 +163,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;#sq_100i &gt; .sd-dropdown__value&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='sendText' value='$Receiving_Institution_name' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='538b476e-5021-4677-80c2-f8ecfa370c95' uiType='base'>
+    <step action='setValue' value='$Receiving_Institution_name' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='538b476e-5021-4677-80c2-f8ecfa370c95' uiType='base'>
       <dialect type='sahi'>
         <accessor type='Parent' value='div(0, _in(div("sq_100i"))).xy(0.28, 0.54 )' selected='true' fallback='true'></accessor>
         <accessor type='Parent' value='div(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;}))).xy(0.28, 0.54 )' selected='false' fallback='true'></accessor>
