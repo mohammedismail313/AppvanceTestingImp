@@ -90,26 +90,10 @@
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='3905bc46-52d5-48a5-b2cc-efbb323e4f9f' uiType='base'>
+    <step action='mouseMove' value='"option-2221"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='bb7d7850-c382-4baa-8ceb-06049b69f845' uiType='base'>
       <dialect type='sahi'>
-        <accessor type='Parent' value='listItem(0, _in(list("dropdownbars-site-dropdown-menu")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='listItem(0, _in(list("dropdownbars-site-dropdown-menu")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='listItem(0, _in(list({&apos;aria-label&apos;:&apos;Sites expanded&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='Id' value='listItem("option-2221")' selected='false' fallback='true'></accessor>
-        <accessor type='Text' value='listItem("Master")' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-9859427.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-9859427.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ed949a4a-1dfd-4f34-a07d-a94dc2b49aef' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@id=&apos;bars-site-dropdown&apos;]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='byXPath("//*[@id=&apos;bars-site-dropdown&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='xpath("//*[@id=&apos;bars-site-dropdown&apos;]")' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='setSelected' value='"option-2221"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='bb7d7850-c382-4baa-8ceb-06049b69f845' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='listItem(0, _in(list("dropdownbars-site-dropdown-menu")))' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='span(0, _in(link("2222")))' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='listItem(0, _in(list("dropdownbars-site-dropdown-menu")))' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='ul("dropdownbars-site-dropdown-menu")/li' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='ul("dropdownbars-site-dropdown-menu")' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='.cayuse-dropdown .menu li' selected='false' fallback='true'></accessor>
@@ -120,15 +104,23 @@
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='store' value='getSelectText(listItem(0, _in(list("dropdownbars-site-dropdown-menu"))))' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='11464a7a-7c78-4efe-aac8-c36683d9b142' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='00c572b4-62d2-44db-b233-68166190070e' uiType='base'>
       <dialect type='sahi'>
-        <accessor type='unknown' value='value' selected='true' fallback='true'></accessor>
+        <accessor type='Parent' value='span(0, _in(link("2222")))' selected='true' fallback='true'></accessor>
+        <accessor type='Parent' value='span(0, _in(link("2222")))' selected='false' fallback='true'></accessor>
+        <accessor type='Parent' value='span(0, _in(link({&apos;id&apos;:&apos;2222&apos;})))' selected='false' fallback='true'></accessor>
+        <accessor type='Text' value='span("PT")' selected='false' fallback='true'></accessor>
+        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-6190330.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-6190330.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
       </dialect>
     </step>
-    <step action='log' value='value' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='848e4163-877c-4721-ad26-0b79874093b8' uiType='base'>
-      <dialect type='sahi'></dialect>
+    <step action='navigateTo' value='"https://esiriuspt.ft.cayuse.com/rrm/animal-inventory/export-requests"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0e72febb-4cfd-4a62-b67b-6169c61f98e9' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='' value='' selected='true' fallback='false'></accessor>
+      </dialect>
     </step>
-    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6714ad65-8ca1-4fb1-b3f6-760130a783c8' uiType='base'>
-      <dialect type='sahi'></dialect>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6714ad65-8ca1-4fb1-b3f6-760130a783c8' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='' selected='true' fallback='true'></accessor>
+      </dialect>
     </step>
   </testcase>
