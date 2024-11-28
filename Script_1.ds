@@ -6,24 +6,38 @@
     <step action='navigateTo' value='"https://sahitest.com/demo/formTest.htm"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='da5a0b53-301b-4c9d-b1e8-fc675a6139ab' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
-    <step action='setSelected' value='"o2"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='dd9f5152-5830-4f9e-9b1a-b6d5d64c02b4' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='dd9f5152-5830-4f9e-9b1a-b6d5d64c02b4' uiType='base'>
       <dialect type='sahi'>
-        <accessor type='unknown' value='select("s1Id")' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='link("/demo")' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='select("s1Id")' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='select' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='store' value='getSelectTexts(select("s1Id"))' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b1a131a3-6a6c-4a36-a57e-4954c7567793' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b1a131a3-6a6c-4a36-a57e-4954c7567793' uiType='base'>
       <dialect type='sahi'>
-        <accessor type='unknown' value='values' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='link("a x[1]")' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='link(a[' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='values' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='log' value='values' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='65273f9c-465b-4c9c-ab65-139b3a77efd3' uiType='base'>
-      <dialect type='sahi'></dialect>
+    <step action='setValue' value='"text1{{ENTER}}' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='65273f9c-465b-4c9c-ab65-139b3a77efd3' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='textarea("ta1")' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
     </step>
-    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ec1aa07b-12b9-4b06-8b99-a5009da3142f' uiType='base'>
-      <dialect type='sahi'></dialect>
+    <step action='setValue' value='"testarea"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ec1aa07b-12b9-4b06-8b99-a5009da3142f' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='textarea(1,_in(form("f1")))' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='textarea(1,_in(form("f1"))' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='textarea(1,_in(form' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='textarea(1,_in' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='textarea(1,' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='textarea' selected='false' fallback='true'></accessor>
+      </dialect>
     </step>
-    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='8f7543cc-bbe7-405b-b8cc-cef6ea68a499' uiType='base'>
+    <step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='8f7543cc-bbe7-405b-b8cc-cef6ea68a499' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
   </testcase>
