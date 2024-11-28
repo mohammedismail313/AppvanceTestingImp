@@ -90,7 +90,7 @@
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='3905bc46-52d5-48a5-b2cc-efbb323e4f9f' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='3905bc46-52d5-48a5-b2cc-efbb323e4f9f' uiType='base'>
       <dialect type='sahi'>
         <accessor type='Parent' value='listItem(0, _in(list("dropdownbars-site-dropdown-menu")))' selected='true' fallback='true'></accessor>
         <accessor type='Parent' value='listItem(0, _in(list("dropdownbars-site-dropdown-menu")))' selected='false' fallback='true'></accessor>
