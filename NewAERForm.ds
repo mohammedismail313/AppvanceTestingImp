@@ -3,7 +3,12 @@
     <dpl filename='{ds}/DPL files/Input_Data.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'></dpl>
     <fallback useFallback='true'></fallback>
     <shadowDOM useShadowDOM='true'></shadowDOM>
-    <step action='navigateTo' value='$url' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e1152735-e80d-46ec-8670-e8342923c815' uiType='base'>
+    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='3ca6dd0d-fc33-4a3b-9517-7bd317971beb' uiType='base'>
       <dialect type='sahi'></dialect>
+    </step>
+    <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b98fb8e8-7327-4bd1-bd3c-4aaf6acdf39f' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
+      </dialect>
     </step>
   </testcase>
