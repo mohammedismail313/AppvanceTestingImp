@@ -150,6 +150,19 @@
         <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2263656.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-2263656.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
       </dialect>
     </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='1b3b8128-e577-40f4-858d-4762f98fb19d' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='Parent' value='div(0, _in(div("sq_100i"))).xy(0.19, 0.21 )' selected='true' fallback='true'></accessor>
+        <accessor type='Parent' value='div(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;}))).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
+        <accessor type='AttrClass' value='div("sd-dropdown__value").xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
+        <accessor type='XPath' value='byXPath("//div[@id=&apos;sq_100i&apos;]/div[1]").xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
+        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-dropdown__value"]&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
+        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
+        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_100i&apos;)/div[@class=&apos;sd-dropdown__value&apos;]").xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-element__content sd-question__content"] &gt; div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"]&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;#sq_100i &gt; .sd-dropdown__value&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
     <step action='sendKeys' value='$Receiving_Institution_name' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='538b476e-5021-4677-80c2-f8ecfa370c95' uiType='base'>
       <dialect type='sahi'>
         <accessor type='Parent' value='div(0, _in(div("sq_100i"))).xy(0.28, 0.54 )' selected='true' fallback='true'></accessor>
@@ -161,19 +174,6 @@
         <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_100i&apos;)/div[@class=&apos;sd-dropdown__value&apos;]").xy(0.28, 0.54 )' selected='false' fallback='true'></accessor>
         <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-element__content sd-question__content"] &gt; div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"]&apos;).xy(0.28, 0.54 )' selected='false' fallback='true'></accessor>
         <accessor type='JQuery' value='byJQuery(&apos;#sq_100i &gt; .sd-dropdown__value&apos;).xy(0.28, 0.54 )' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='64b76dbc-8541-4b26-8d88-262e1ee66ee2' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='div(0, _in(div("sq_100i"))).xy(0.19, 0.21 )' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='div(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;}))).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='div("sd-dropdown__value").xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//div[@id=&apos;sq_100i&apos;]/div[1]").xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-dropdown__value"]&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_100i&apos;)/div[@class=&apos;sd-dropdown__value&apos;]").xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-element__content sd-question__content"] &gt; div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"]&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_100i &gt; .sd-dropdown__value&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
     <step action='sendKeys' value='$RI_address' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='64b96255-17e4-4ad2-8ea6-14853c3acaee' uiType='base'>
