@@ -176,7 +176,10 @@
         <accessor type='JQuery' value='byJQuery(&apos;#sq_100i &gt; .sd-dropdown__value&apos;).xy(0.28, 0.54 )' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='sendKeys' value='$RI_address' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='64b96255-17e4-4ad2-8ea6-14853c3acaee' uiType='base'>
+    <step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c44daac9-78dc-43ea-adcd-9e1c5b09eda0' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='setValue' value='$RI_address' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='64b96255-17e4-4ad2-8ea6-14853c3acaee' uiType='base'>
       <dialect type='sahi'>
         <accessor type='Parent' value='div(0, _in(listItem("sq_100i_listc159c5c5-12a1-4712-a872-11a0b89fb3b5"))).xy(0.19, 0.15 )' selected='true' fallback='true'></accessor>
         <accessor type='Parent' value='div(0, _in(listItem({&apos;id&apos;:&apos;sq_100i_listc159c5c5-12a1-4712-a872-11a0b89fb3b5&apos;}))).xy(0.19, 0.15 )' selected='false' fallback='true'></accessor>
