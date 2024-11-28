@@ -21,7 +21,7 @@
         <accessor type='unknown' value='values' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='"text1{{ENTER}}' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='65273f9c-465b-4c9c-ab65-139b3a77efd3' uiType='base'>
+    <step action='setValue' value='"text1{{ENTER}}"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='65273f9c-465b-4c9c-ab65-139b3a77efd3' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='textarea("ta1")' selected='true' fallback='true'></accessor>
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
