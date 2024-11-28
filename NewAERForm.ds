@@ -165,9 +165,9 @@
     </step>
     <step action='setValue' value='$Receiving_Institution_name' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='538b476e-5021-4677-80c2-f8ecfa370c95' uiType='base'>
       <dialect type='sahi'>
-        <accessor type='Parent' value='div(0, _in(div("sq_100i"))).xy(0.28, 0.54 )' selected='true' fallback='true'></accessor>
+        <accessor type='AttrClass' value='div("sd-dropdown__value").xy(0.28, 0.54 )' selected='true' fallback='true'></accessor>
+        <accessor type='Parent' value='div(0, _in(div("sq_100i"))).xy(0.28, 0.54 )' selected='false' fallback='true'></accessor>
         <accessor type='Parent' value='div(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;}))).xy(0.28, 0.54 )' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='div("sd-dropdown__value").xy(0.28, 0.54 )' selected='false' fallback='true'></accessor>
         <accessor type='XPath' value='byXPath("//div[@id=&apos;sq_100i&apos;]/div[1]").xy(0.28, 0.54 )' selected='false' fallback='true'></accessor>
         <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-dropdown__value"]&apos;).xy(0.28, 0.54 )' selected='false' fallback='true'></accessor>
         <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div&apos;).xy(0.28, 0.54 )' selected='false' fallback='true'></accessor>
@@ -181,8 +181,8 @@
     </step>
     <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6826fb13-415d-410e-bed1-91a4ac9d0a39' uiType='base'>
       <dialect type='sahi'>
-        <accessor type='Parent' value='div(0, _in(div("sq_101i"))).xy(0.45, 0.67 )' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='div(0, _in(div({&apos;aria-label&apos;:&apos;Receiving Institution Shipping Address&apos;}))).xy(0.45, 0.67 )' selected='false' fallback='true'></accessor>
+        <accessor type='Parent' value='div(0, _in(div({&apos;aria-label&apos;:&apos;Receiving Institution Shipping Address&apos;}))).xy(0.45, 0.67 )' selected='true' fallback='true'></accessor>
+        <accessor type='Parent' value='div(0, _in(div("sq_101i"))).xy(0.45, 0.67 )' selected='false' fallback='true'></accessor>
         <accessor type='AttrClass' value='div("sd-dropdown__value[1]").xy(0.45, 0.67 )' selected='false' fallback='true'></accessor>
         <accessor type='XPath' value='byXPath("//div[@id=&apos;sq_101i&apos;]/div[1]").xy(0.45, 0.67 )' selected='false' fallback='true'></accessor>
         <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div&apos;).xy(0.45, 0.67 )' selected='false' fallback='true'></accessor>
