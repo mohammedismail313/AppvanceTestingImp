@@ -11,4 +11,9 @@
         <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
+    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='5b6978fb-6db1-4012-8d8c-7b365def616c' uiType='base' isHidden='true'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
   </testcase>
