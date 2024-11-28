@@ -119,7 +119,7 @@
         <accessor type='' value='' selected='false' fallback='false'></accessor>
       </dialect>
     </step>
-    <step action='doubleClick' value='"+ New Export Request"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b11667b9-c7ad-49b9-b242-f0257016f848' uiType='base'>
+    <step action='doubleClick' value='"+ New Export Request"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b11667b9-c7ad-49b9-b242-f0257016f848' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathText' value='byXPath(&apos;//*[text()="+ New Export Request"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition")' selected='false' fallback='true'></accessor>
@@ -134,7 +134,7 @@
         <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-1929833.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-1929833.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='9a8cfc4b-375a-4144-ae87-90ea37478844' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='9a8cfc4b-375a-4144-ae87-90ea37478844' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria7625230554-:r4:&apos;]")' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition")' selected='false' fallback='true'></accessor>
