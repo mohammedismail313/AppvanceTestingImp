@@ -190,7 +190,7 @@
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='keyboardCommand' value='"{{ENTER}}"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='1b9fb42d-be6f-4a48-adfd-64ecddd56f9b' uiType='base'>
+    <step action='setValue' value='"{{ENTER}}"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='1b9fb42d-be6f-4a48-adfd-64ecddd56f9b' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='textbox(0, _in(div("sq_100i")))' selected='true' fallback='true'></accessor>
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
