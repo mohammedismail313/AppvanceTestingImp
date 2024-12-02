@@ -247,7 +247,7 @@
         <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2703195.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-2703195.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='24f506cf-7a35-46b1-be91-606d0a72f0a7' uiType='base'>
+    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='24f506cf-7a35-46b1-be91-606d0a72f0a7' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='span("Exporter Details")' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='button("bg-bluecayuse-500 border border-black/10 cursor-pointer dark:border-white/10 dark:outline-blue-500 dark:shadow-none false flex font-bold forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 items-center justify-between outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-2 py-2 rounded-none shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition w-full")' selected='false' fallback='true'></accessor>
@@ -307,6 +307,15 @@
         <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"] &gt; input[class="sd-dropdown__filter-string-input"]&apos;)' selected='false' fallback='true'></accessor>
         <accessor type='JQuery' value='byJQuery(&apos;#sq_109i_0&apos;)' selected='false' fallback='true'></accessor>
         <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-7643672.png&apos;),{x:0,y:0,w:1,h:1,cx:0.55,cy:0.50}))' selected='false' fallback='false' imgPath='img-7643672.png' coords='{x:0,y:0,w:1,h:1,cx:0.55,cy:0.50}'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='036d49ae-ded8-4873-ab59-f70cc6c59474' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='Text' value='span("Exporter Details")' selected='true' fallback='true'></accessor>
+        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria4879658130-:r1n:&apos;]/span")' selected='false' fallback='true'></accessor>
+        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Exporter Details"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/button/span&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria4879658130-:r1n:&apos;)/span[1]")' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
   </testcase>
