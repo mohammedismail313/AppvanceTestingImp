@@ -488,6 +488,20 @@
         <accessor type='Attribute' value='cell({&apos;data-key&apos;:&apos;react-aria-13&apos;})' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6ded583f-667a-4ed5-a52a-dbfd60b303dc' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='AttrClass' value='cell("-outline-offset-2 [--selected-border:theme(colors.blue.200)] [:has(+[data-selected])_&amp;]:border-[--selected-border] border-b dark:[--selected-border:theme(colors.blue.900)] dark:border-b-zinc-700 dark:outline-blue-500 forced-colors:outline-[Highlight] group-last/row:border-b-0 group-selected/row:border-[--selected-border] outline outline-0 outline-blue-600 p-2 truncate[2]")' selected='true' fallback='true'></accessor>
+        <accessor type='Text' value='cell("2, FT")' selected='false' fallback='true'></accessor>
+        <accessor type='XPath' value='byXPath("//td[@id=&apos;react-aria1815535447-:r42:-0000000350-principalInvestigator.nameLast&apos;]")' selected='false' fallback='true'></accessor>
+        <accessor type='XPathText' value='byXPath(&apos;//*[text()="2, FT"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[4]/div/div/div[2]/div/div/div[5]/div/div/table/tbody/tr/td[2]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria1815535447-:r42:-0000000350-principalInvestigator.nameLast&apos;)")' selected='false' fallback='true'></accessor>
+        <accessor type='TableXPath' value='byXPath(&apos;//tbody//tr[1]//td[2][@id="react-aria1815535447-:r42:-0000000350-principalInvestigator.nameLast"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='TableXPath' value='byXPath(&apos;//tbody//tr[1]//td[2][@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] border-b dark:border-b-zinc-700 group-last/row:border-b-0 [--selected-border:theme(colors.blue.200)] dark:[--selected-border:theme(colors.blue.900)] group-selected/row:border-[--selected-border] [:has(+[data-selected])_&amp;]:border-[--selected-border] p-2 truncate -outline-offset-2 outline-0"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='TableXPath' value='byXPath(&apos;//tbody//tr[1]//td[2][text()="2, FT"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='Attribute' value='cell({&apos;data-key&apos;:&apos;react-aria-13&apos;})' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
     <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='74debec6-cd36-4f4f-a1f4-01d8b286ad21' uiType='base'>
       <dialect type='sahi'>
         <accessor type='Text' value='button("Add")' selected='true' fallback='true'></accessor>
