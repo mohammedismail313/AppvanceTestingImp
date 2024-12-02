@@ -230,7 +230,7 @@
         <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2703195.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-2703195.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
       </dialect>
     </step>
-    <step action='keyboardCommand' value='"Enter"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e6bc3422-6251-45bf-a3e9-5e8d7e1436ff' uiType='base'>
+    <step action='keyboardCommand' value='"ENTER"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e6bc3422-6251-45bf-a3e9-5e8d7e1436ff' uiType='base'>
       <dialect type='sahi'>
         <accessor type='Parent' value='textbox(0, _in(div("sq_101i")))' selected='true' fallback='true'></accessor>
         <accessor type='Parent' value='textbox(0, _in(div("sq_101i")))' selected='false' fallback='true'></accessor>
