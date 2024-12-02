@@ -488,7 +488,7 @@
         <accessor type='Attribute' value='cell({&apos;data-key&apos;:&apos;react-aria-13&apos;})' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6ded583f-667a-4ed5-a52a-dbfd60b303dc' uiType='base'>
+    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6ded583f-667a-4ed5-a52a-dbfd60b303dc' uiType='base'>
       <dialect type='sahi'>
         <accessor type='AttrClass' value='cell("-outline-offset-2 [--selected-border:theme(colors.blue.200)] [:has(+[data-selected])_&amp;]:border-[--selected-border] border-b dark:[--selected-border:theme(colors.blue.900)] dark:border-b-zinc-700 dark:outline-blue-500 forced-colors:outline-[Highlight] group-last/row:border-b-0 group-selected/row:border-[--selected-border] outline outline-0 outline-blue-600 p-2 truncate[2]")' selected='true' fallback='true'></accessor>
         <accessor type='Text' value='cell("2, FT")' selected='false' fallback='true'></accessor>
