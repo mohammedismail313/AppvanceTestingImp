@@ -314,13 +314,39 @@
         <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-7643672.png&apos;),{x:0,y:0,w:1,h:1,cx:0.55,cy:0.50}))' selected='false' fallback='false' imgPath='img-7643672.png' coords='{x:0,y:0,w:1,h:1,cx:0.55,cy:0.50}'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='036d49ae-ded8-4873-ab59-f70cc6c59474' uiType='base'>
+    <step action='click' value='' type='web' desc='adding General Information' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='036d49ae-ded8-4873-ab59-f70cc6c59474' uiType='base'>
       <dialect type='sahi'>
-        <accessor type='Text' value='span("Exporter Details")' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='byXPath(&apos;(//*[@type=&apos;button&apos;])[8]&apos;) ' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='byXPath(&apos;(//*[@type=&apos;button&apos;])[8]&apos;) //div[@id=&apos;sq_112&apos;]//div[2]' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='span("Exporter Details") //div[@id=&apos;sq_112&apos;]//div[2]' selected='false' fallback='true'></accessor>
+        <accessor type='Text' value='span("Exporter Details")' selected='false' fallback='true'></accessor>
         <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria4879658130-:r1n:&apos;]/span")' selected='false' fallback='true'></accessor>
         <accessor type='XPathText' value='byXPath(&apos;//*[text()="Exporter Details"]&apos;)' selected='false' fallback='true'></accessor>
         <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/button/span&apos;)' selected='false' fallback='true'></accessor>
         <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria4879658130-:r1n:&apos;)/span[1]")' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='67e4e1a5-5c57-4550-89db-bb82956b07fc' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;(//*[@type=&apos;button&apos;])[8]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='19e117e1-f724-4017-8e5b-fc0f3bd9d36f' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//div[@id=&apos;sq_112&apos;]//div[2]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='byXPath(&apos;&apos;)' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='setValue' value='$Request_Shipping_date' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='47a725ae-b35a-42a3-b789-f7174342e70b' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//div[@id=&apos;sq_112&apos;]//div[2]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='keyboardCommand' value='"ENTER"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='eca37c06-2a4e-45af-b476-11ab869ec0b8' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//div[@id=&apos;sq_112&apos;]//div[2]&apos;)' selected='true' fallback='true'></accessor>
       </dialect>
     </step>
   </testcase>
