@@ -55,7 +55,7 @@
         <accessor type='unknown' value='' selected='false' fallback='false'></accessor>
       </dialect>
     </step>
-    <step action='evalAndReturn' value='browser.findElementByXPath("//table[@id=&apos;react-aria7289897889-:r4:&apos;]//tr//td[1]")' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e0afb3df-222d-4999-a1f4-40a263fa5b3d' uiType='base'>
+    <step action='getText' value='XPath("//table[@id=&apos;react-aria7289897889-:r4:&apos;]//tr//td[1]")' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e0afb3df-222d-4999-a1f4-40a263fa5b3d' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='val' selected='true' fallback='true'></accessor>
       </dialect>
