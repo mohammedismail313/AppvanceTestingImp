@@ -55,4 +55,12 @@
         <accessor type='unknown' value='' selected='false' fallback='false'></accessor>
       </dialect>
     </step>
+    <step action='store' value='getText(//table[@id=&apos;react-aria7289897889-:r4:&apos;]//tr//td[1])' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e0afb3df-222d-4999-a1f4-40a263fa5b3d' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='val' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='log' value='val' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='54ef03cf-fd41-445b-950e-d2fa4bd1871a' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
   </testcase>
