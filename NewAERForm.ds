@@ -499,6 +499,21 @@
         <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2817703.png&apos;),{x:0,y:0,w:1,h:1,cx:0.52,cy:0.50}))' selected='false' fallback='false' imgPath='img-2817703.png' coords='{x:0,y:0,w:1,h:1,cx:0.52,cy:0.50}'></accessor>
       </dialect>
     </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ef6c4bf7-d8ed-4db0-a548-128d7c855967' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Add"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition")' selected='false' fallback='true'></accessor>
+        <accessor type='Text' value='button("Add")' selected='false' fallback='true'></accessor>
+        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria5791597121-:r40:&apos;]")' selected='false' fallback='true'></accessor>
+        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Add"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[4]/div/div/div[2]/div/div/div[4]/div[2]/button&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria5791597121-:r40:&apos;)")' selected='false' fallback='true'></accessor>
+        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2817703.png&apos;),{x:0,y:0,w:1,h:1,cx:0.52,cy:0.50}))' selected='false' fallback='false' imgPath='img-2817703.png' coords='{x:0,y:0,w:1,h:1,cx:0.52,cy:0.50}'></accessor>
+      </dialect>
+    </step>
     <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='915f7c06-863d-4ec4-aea9-f9946de7137d' uiType='base'>
       <dialect type='sahi'>
         <accessor type='XPathText' value='byXPath(&apos;//*[text()="Save"]&apos;)' selected='true' fallback='true'></accessor>
