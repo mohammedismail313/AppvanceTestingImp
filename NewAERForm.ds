@@ -461,7 +461,7 @@
         <accessor type='JQuery' value='byJQuery(&apos;.sv_qcbc.sv_qbln.sd-scrollable-container.sd-boolean-root &gt; .sd-boolean.sd-boolean--allowhover.sd-boolean--indeterminate &gt; .sd-boolean__thumb-ghost &gt; .sd-boolean__label &gt; .sv-string-viewer.sv-string-viewer--multiline&apos;)' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='091552e2-69e0-4eea-92ae-487c8ffa0bd8' uiType='base'>
+    <step action='click' value='"CTRL"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='091552e2-69e0-4eea-92ae-487c8ffa0bd8' uiType='base'>
       <dialect type='sahi'>
         <accessor type='AttrClass' value='div("[--color:theme(colors.gray.700)] bg-[--color] border-2 border-[--color] dark:[--color:theme(colors.slate.300)] dark:group-pressed:[--color:theme(colors.slate.200)] dark:outline-blue-500 flex flex-shrink-0 forced-colors:![--color:Highlight] forced-colors:outline-[Highlight] group-pressed:[--color:theme(colors.gray.800)] h-5 items-center justify-center outline outline-0 outline-blue-600 outline-offset-2 rounded transition w-5")' selected='true' fallback='true'></accessor>
         <accessor type='XPath' value='byXPath("//table[@id=&apos;react-aria2342477313-:r42:&apos;]/tbody/tr[1]/td[1]/label/div")' selected='false' fallback='true'></accessor>
