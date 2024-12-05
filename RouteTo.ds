@@ -75,7 +75,7 @@
         <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2434983.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-2434983.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
       </dialect>
     </step>
-    <step action='log' value='result' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='32b73dd6-d7c0-4d8a-840d-7cbf03c455fb' uiType='base'>
+    <step action='js' value='var element=findElements("XPath","/html/body/div[3]/div/div[2]/div[3]/div/div/table/tbody/tr/td[1]");' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='32b73dd6-d7c0-4d8a-840d-7cbf03c455fb' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='' selected='true' fallback='true'></accessor>
         <accessor type='AttrClass' value='div("-outline-offset-2 bg-clip-content bg-gray-400 box-content cursor-col-resize dark:bg-zinc-500 dark:outline-blue-500 forced-colors:bg-[ButtonBorder] forced-colors:outline-[Highlight] forced-colors:resizing:bg-[Highlight] h-5 outline outline-0 outline-blue-600 px-[8px] py-1 resizing:bg-blue-600 resizing:pl-[7px] resizing:w-[2px] rounded translate-x-[8px] w-px[2]")' selected='false' fallback='true'></accessor>
@@ -84,5 +84,8 @@
         <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria7212326369-:r8:-exportNumber&apos;)/div[@class=&apos;flex items-center&apos;]/div[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] w-px px-[8px] translate-x-[8px] box-content py-1 h-5 bg-clip-content bg-gray-400 dark:bg-zinc-500 forced-colors:bg-[ButtonBorder] cursor-col-resize rounded resizing:bg-blue-600 forced-colors:resizing:bg-[Highlight] resizing:w-[2px] resizing:pl-[7px] -outline-offset-2 outline-0&apos;]")' selected='false' fallback='true'></accessor>
         <accessor type='Attribute' value='div({&apos;data-focused&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
       </dialect>
+    </step>
+    <step action='log' value='var' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0ac23edf-e214-4633-b567-a8a609a6063d' uiType='base'>
+      <dialect type='sahi'></dialect>
     </step>
   </testcase>
