@@ -75,9 +75,11 @@
         <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2434983.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-2434983.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
       </dialect>
     </step>
-    <step action='evalAndReturn' value='findElements("XPath","/html/body/div[3]/div/div[2]/div[3]/div/div/table/tbody/tr/td[1]");' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='32b73dd6-d7c0-4d8a-840d-7cbf03c455fb' uiType='base'>
+    <step action='evalAndReturn' value='findAll("XPath","/html/body/div[3]/div/div[2]/div[3]/div/div/table/tbody/tr/td[1]");' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='32b73dd6-d7c0-4d8a-840d-7cbf03c455fb' uiType='base'>
       <dialect type='sahi'>
-        <accessor type='unknown' value='var element' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='element' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='var ' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='var element' selected='false' fallback='true'></accessor>
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
         <accessor type='AttrClass' value='div("-outline-offset-2 bg-clip-content bg-gray-400 box-content cursor-col-resize dark:bg-zinc-500 dark:outline-blue-500 forced-colors:bg-[ButtonBorder] forced-colors:outline-[Highlight] forced-colors:resizing:bg-[Highlight] h-5 outline outline-0 outline-blue-600 px-[8px] py-1 resizing:bg-blue-600 resizing:pl-[7px] resizing:w-[2px] rounded translate-x-[8px] w-px[2]")' selected='false' fallback='true'></accessor>
         <accessor type='XPath' value='byXPath("//th[@id=&apos;react-aria7212326369-:r8:-exportNumber&apos;]/div/div[2]")' selected='false' fallback='true'></accessor>
