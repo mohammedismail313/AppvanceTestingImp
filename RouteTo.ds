@@ -85,7 +85,7 @@
         <accessor type='Attribute' value='div({&apos;data-focused&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='log' value='var' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0ac23edf-e214-4633-b567-a8a609a6063d' uiType='base'>
+    <step action='log' value='element' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0ac23edf-e214-4633-b567-a8a609a6063d' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
   </testcase>
