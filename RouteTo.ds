@@ -12,13 +12,13 @@
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='5fa94e41-17f3-4798-b9a4-788895f188e0' uiType='base'>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='5fa94e41-17f3-4798-b9a4-788895f188e0' uiType='base' isHidden='true'>
       <dialect type='sahi'>
         <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
       </dialect>
     </step>
-    <step action='setValue' value='"cayuse1234"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='f8053f59-935c-43db-9f8b-33aa17d5f86d' uiType='base'>
+    <step action='setValue' value='"cayuse1234"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='f8053f59-935c-43db-9f8b-33aa17d5f86d' uiType='base' isHidden='true'>
       <dialect type='sahi'>
         <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
         <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
@@ -55,14 +55,7 @@
         <accessor type='unknown' value='' selected='false' fallback='false'></accessor>
       </dialect>
     </step>
-    <step action='getText' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e0afb3df-222d-4999-a1f4-40a263fa5b3d' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//table[@id=&apos;react-aria7289897889-:r4:&apos;]//tr//td[1]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='byXPath(&apos;&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='val' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='log' value='val' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='54ef03cf-fd41-445b-950e-d2fa4bd1871a' uiType='base'>
+    <step action='log' value='getTagsSmartTags()' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='4ee57b0f-eed4-4fa1-a058-bd11eaed9e3f' uiType='base'>
       <dialect type='sahi'></dialect>
     </step>
   </testcase>
