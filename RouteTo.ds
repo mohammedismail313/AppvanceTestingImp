@@ -59,10 +59,10 @@
 </step>
 <step action='store' value='/html/body/div[3]/div/div[2]/div[3]/div/div/table/tbody/tr/td[1]' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='unknown' value='result' fallback='true' selected='true'/>
+   <accessor type='unknown' value='rowLength' fallback='true' selected='true'/>
 </dialect>
 </step>
-<step action='eval' value='find(&quot;XPath&quot;,&quot;/html/body/div[3]/div/div[2]/div[3]/div/div/table/tbody/tr/td[1]&quot;);' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+<step action='eval' value='find(&quot;XPath&quot;,&quot;/html/body/div[3]/div/div[2]/div[3]/div/div/table/tbody/tr/td[1]&quot;);' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='unknown' value='element' fallback='true' selected='true'/>
    <accessor type='unknown' value='var ' fallback='true' selected='false'/>
