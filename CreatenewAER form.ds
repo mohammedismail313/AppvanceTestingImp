@@ -1,171 +1,155 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testcase   name= 'CreatenewAER form.ds' description= '' author= 'Mohanraj_Seerangan_CAYUSE@appvance.com' version= ''>
-<dpl filename='{ds}/Login_Credentials.csv' exectype='runspecificstep3' errorhandling='' type='HashDPL' locale='en_US'/>
-<fallback useFallback='true'/>
-<shadowDOM useShadowDOM='true'/>
-<step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;username&quot;]&apos;)' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='true' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;password&quot;]&apos;)' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='true' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;password&quot;]&apos;)' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='byXPath(&apos;//*[@name=&quot;signInSubmitButton&quot;]&apos;)' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='verifyContainsText' value='"FT 1"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='Text' value='span(&quot;FT 1&quot;)' fallback='true' selected='true'/>
-   <accessor type='Text' value='span(&quot;FT 1&quot;)' fallback='true' selected='false'/>
-</dialect>
-</step>
-<step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='verifyContainsText (span(&quot;FT 1&quot;),&quot;FT 1&quot;);' fallback='true' selected='true'/>
-   <accessor type='unknown' value='verifyContainsText (span(&quot;FT 1&quot;), &quot;FT 1&quot;);' fallback='true' selected='false'/>
-   <accessor type='unknown' value='verifyContainsText (span(&quot;FT 1&quot;) &quot;FT 1&quot;);' fallback='true' selected='false'/>
-   <accessor type='unknown' value='verifyContainsText span(&quot;FT 1&quot;) &quot;FT 1&quot;;' fallback='true' selected='false'/>
-   <accessor type='unknown' value='verifyContainsText &quot;FT 1&quot;;' fallback='true' selected='false'/>
-   <accessor type='unknown' value='verifyContainsText span(&quot;FT 1&quot;);' fallback='true' selected='false'/>
-   <accessor type='unknown' value='verifyContainsText (span(&quot;FT 1&quot;));' fallback='true' selected='false'/>
-   <accessor type='unknown' value='assertContainsText (span(&quot;FT 1&quot;))' fallback='true' selected='false'/>
-   <accessor type='unknown' value='assertTextPresent (span(&quot;FT 1&quot;))' fallback='true' selected='false'/>
-   <accessor type='unknown' value='assertTextPresent (&quot;FT 1&quot;)' fallback='true' selected='false'/>
-   <accessor type='unknown' value='assertContainsText (&quot;FT 1&quot;)' fallback='true' selected='false'/>
-   <accessor type='unknown' value='assertContainsText (&quot;FT 1&quot;);' fallback='true' selected='false'/>
-   <accessor type='unknown' value='assertContainsText (span(&quot;FT 1&quot;));' fallback='true' selected='false'/>
-   <accessor type='unknown' value='assertContainsText span(&quot;FT 1&quot;);' fallback='true' selected='false'/>
-   <accessor type='unknown' value='assertContainsText span(&quot;FT 1&quot;)' fallback='true' selected='false'/>
-   <accessor type='unknown' value='assertContainsText' fallback='true' selected='false'/>
-</dialect>
-</step>
-<step action='store' value='"Valid user"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='result' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='else' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='store' value='"invaid user"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='result' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='log' value='result' type='web' desc='verifying user name' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='log' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='assertContainsText' value='"Site: Master"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='Parent' value='span(1, _in(submit(&quot;dropdownbars-site-dropdown-button&quot;)))' fallback='true' selected='true'/>
-   <accessor type='Parent' value='span(1, _in(submit(&quot;dropdownbars-site-dropdown-button&quot;)))' fallback='true' selected='false'/>
-   <accessor type='Parent' value='span(1, _in(submit({&apos;aria-label&apos;:&apos;Sites&apos;})))' fallback='true' selected='false'/>
-   <accessor type='AttrClass' value='span(&quot;title[2]&quot;)' fallback='true' selected='false'/>
-   <accessor type='Text' value='span(&quot;Site: Master&quot;)' fallback='true' selected='false'/>
-</dialect>
-</step>
-<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='span(1, _in(submit(&quot;dropdownbars-site-dropdown-button&quot;)))' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='click' value='' type='web' desc='changing site from master to PT' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='Parent' value='span(0, _in(link(&quot;2222&quot;)))' fallback='true' selected='true'/>
-   <accessor type='Parent' value='span(0, _in(link(&quot;2222&quot;)))' fallback='true' selected='false'/>
-   <accessor type='Parent' value='span(0, _in(link({&apos;id&apos;:&apos;2222&apos;})))' fallback='true' selected='false'/>
-   <accessor type='Text' value='span(&quot;PT&quot;)' fallback='true' selected='false'/>
-   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-6190330.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}' imgPath='img-6190330.png' fallback='false' selected='false'/>
-</dialect>
-</step>
-<step action='assertContainsText' value='"Site: PT"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='span(1, _in(submit(&quot;dropdownbars-site-dropdown-button&quot;)))' fallback='true' selected='true'/>
-</dialect>
-</step>
-<step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div/div[2]/button&apos;)' fallback='true' selected='true'/>
-   <accessor type='Text' value='button(&quot;+ New Export Request&quot;)' fallback='true' selected='false'/>
-   <accessor type='AttrClass' value='button(&quot;bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition&quot;)' fallback='true' selected='false'/>
-   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria9683619779-:r4:&apos;]&quot;)' fallback='true' selected='false'/>
-   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;+ New Export Request&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria9683619779-:r4:&apos;)&quot;)' fallback='true' selected='false'/>
-   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
-   <accessor type='JQuery' value='byJQuery(&apos;button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0&quot;]&apos;)' fallback='true' selected='false'/>
-</dialect>
-</step>
-<step action='doubleClick' value='"+ New Export Request"' type='web' desc='click new export Request button' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;+ New Export Request&quot;]&apos;)' fallback='true' selected='true'/>
-   <accessor type='AttrClass' value='button(&quot;bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition&quot;)' fallback='true' selected='false'/>
-   <accessor type='Text' value='button(&quot;+ New Export Request&quot;)' fallback='true' selected='false'/>
-   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria2755765167-:r4:&apos;]&quot;)' fallback='true' selected='false'/>
-   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;+ New Export Request&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div/div[2]/button&apos;)' fallback='true' selected='false'/>
-   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria2755765167-:r4:&apos;)&quot;)' fallback='true' selected='false'/>
-   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
-   <accessor type='JQuery' value='byJQuery(&apos;button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-1929833.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}' imgPath='img-1929833.png' fallback='false' selected='false'/>
-</dialect>
-</step>
-<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='AttrClass' value='button(&quot;bg-gray-100 border border-black/10 cursor-default dark:bg-zinc-600 dark:border-white/10 dark:hover:bg-zinc-500 dark:outline-blue-500 dark:pressed:bg-zinc-400 dark:shadow-none dark:text-zinc-100 forced-colors:outline-[Highlight] hover:bg-gray-200 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-gray-300 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-gray-800 text-sm transition&quot;)' fallback='true' selected='true'/>
-   <accessor type='Text' value='button(&quot;Cancel&quot;)' fallback='true' selected='false'/>
-   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria7625230554-:r1g:&apos;]&quot;)' fallback='true' selected='false'/>
-   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-gray-100 hover:bg-gray-200 pressed:bg-gray-300 text-gray-800 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:pressed:bg-zinc-400 dark:text-zinc-100 outline-0&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Cancel&quot;]&apos;)' fallback='true' selected='false'/>
-   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/button[2]&apos;)' fallback='true' selected='false'/>
-   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria7625230554-:r1g:&apos;)&quot;)' fallback='true' selected='false'/>
-   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
-   <accessor type='JQuery' value='byJQuery(&apos;button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-gray-100 hover:bg-gray-200 pressed:bg-gray-300 text-gray-800 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:pressed:bg-zinc-400 dark:text-zinc-100 outline-0&quot;]&apos;)' fallback='true' selected='false'/>
-</dialect>
-</step>
-<step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-<step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='false' selected='true'/>
-</dialect>
-</step>
-</testcase>
+  <testcase name='' description='script generated from Web Designer' author='Mohanraj_Seerangan_CAYUSE@appvance.com' version='webDesigner'>
+    <dpl filename='{ds}/Login_Credentials.csv' exectype='runspecificstep3' errorhandling='' type='HashDPL' locale='en_US'></dpl>
+    <fallback useFallback='true'></fallback>
+    <shadowDOM useShadowDOM='true'></shadowDOM>
+    <step action='navigateTo' value='"https://signin.ft.cayuse.com/login?tenant_id=e8dd2da8-4499-48dd-ab70-7308be56378d&amp;redirect_uri=https%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fapi%2Fauthentication%3Foriginal_uri%3Dhttps%3A%2F%2Fesiriuspt.ft.cayuse.com%2Frrm%2Fanimal-inventory%2Fexport-requests&amp;response_type=CODE&amp;state&amp;nonce&amp;auth_error=false"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b06c8391-334a-44af-808f-95425ac133ed' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='setValue' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='bda86869-2f5b-4068-a519-01c2f5d50ecf' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='193893fb-a3bc-4db4-85b7-6cdf65417a5d' uiType='base' isHidden='true'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='setValue' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='567e63d3-4a05-4604-a1db-5d209635a152' uiType='base' isHidden='true'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='d32a8ce7-e693-40c1-a2df-2df47ec54145' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='byXPath(&apos;//*[@name="signInSubmitButton"]&apos;)' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='verifyContainsText' value='"FT 1"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='a766cc71-fcb5-4ea8-9c09-7579a5e20b4c' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='Text' value='span("FT 1")' selected='true' fallback='true'></accessor>
+        <accessor type='Text' value='span("FT 1")' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='if' value='verifyContainsText (span("FT 1"),"FT 1");' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='2afc2c20-1421-455d-be8d-02919dbb7907' uiType='conditional'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='verifyContainsText (span("FT 1"),"FT 1");' selected='true' fallback='true'></accessor>
+        <accessor type='unknown' value='verifyContainsText (span("FT 1"), "FT 1");' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='verifyContainsText (span("FT 1") "FT 1");' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='verifyContainsText span("FT 1") "FT 1";' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='verifyContainsText "FT 1";' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='verifyContainsText span("FT 1");' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='verifyContainsText (span("FT 1"));' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='assertContainsText (span("FT 1"))' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='assertTextPresent (span("FT 1"))' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='assertTextPresent ("FT 1")' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='assertContainsText ("FT 1")' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='assertContainsText ("FT 1");' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='assertContainsText (span("FT 1"));' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='assertContainsText span("FT 1");' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='assertContainsText span("FT 1")' selected='false' fallback='true'></accessor>
+        <accessor type='unknown' value='assertContainsText' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='store' value='"Valid user"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='4d290d12-09b5-46e5-ae0d-d7a6b3d3fff6' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='result' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='else' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='dca85b6a-d3ab-4d9f-8d1e-5756f92601b6' uiType='conditional'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='store' value='"invaid user"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='dca85b6a-d3ab-4d9f-8d1e-5756f92601b6' uid='df06b4bf-4d26-401a-a7a5-9acbe40b851a' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='result' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='e0f825a7-5367-461b-8290-c68ffba6503a' uiType='end' sibling='dca85b6a-d3ab-4d9f-8d1e-5756f92601b6'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='log' value='result' type='web' desc='verifying user name' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='1334ecb0-b6a5-4587-8699-2dd22757bb8a' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='log' value='$Username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='3c089460-4737-4dfd-90e0-50950a3d006f' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='assertContainsText' value='"Site: Master"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='044ad2a8-9449-4883-800c-b1a01371bf00' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='Parent' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='true' fallback='true'></accessor>
+        <accessor type='Parent' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='false' fallback='true'></accessor>
+        <accessor type='Parent' value='span(1, _in(submit({&apos;aria-label&apos;:&apos;Sites&apos;})))' selected='false' fallback='true'></accessor>
+        <accessor type='AttrClass' value='span("title[2]")' selected='false' fallback='true'></accessor>
+        <accessor type='Text' value='span("Site: Master")' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='85f48d2d-e3b8-40b2-986f-bb06c57ca4f9' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='changing site from master to PT' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='e741b149-f6e2-4c12-ae4a-e96394a933f1' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='Parent' value='span(0, _in(link("2222")))' selected='true' fallback='true'></accessor>
+        <accessor type='Parent' value='span(0, _in(link("2222")))' selected='false' fallback='true'></accessor>
+        <accessor type='Parent' value='span(0, _in(link({&apos;id&apos;:&apos;2222&apos;})))' selected='false' fallback='true'></accessor>
+        <accessor type='Text' value='span("PT")' selected='false' fallback='true'></accessor>
+        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-6190330.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-6190330.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
+      </dialect>
+    </step>
+    <step action='assertContainsText' value='"Site: PT"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='c2e30252-5cc0-4851-b78a-f17c75ff6505' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='unknown' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='true' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='d5e7c046-9742-44cf-80cf-ad2273b19929' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='d91f45ba-bb55-4cb1-8aca-27635e2aa18a' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div/div[2]/button&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='Text' value='button("+ New Export Request")' selected='false' fallback='true'></accessor>
+        <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition")' selected='false' fallback='true'></accessor>
+        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria9683619779-:r4:&apos;]")' selected='false' fallback='true'></accessor>
+        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='XPathText' value='byXPath(&apos;//*[text()="+ New Export Request"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria9683619779-:r4:&apos;)")' selected='false' fallback='true'></accessor>
+        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='doubleClick' value='"+ New Export Request"' type='web' desc='click new export Request button' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='f69ade60-c975-457d-8c9e-0b786454c6d3' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='XPathText' value='byXPath(&apos;//*[text()="+ New Export Request"]&apos;)' selected='true' fallback='true'></accessor>
+        <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition")' selected='false' fallback='true'></accessor>
+        <accessor type='Text' value='button("+ New Export Request")' selected='false' fallback='true'></accessor>
+        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria2755765167-:r4:&apos;]")' selected='false' fallback='true'></accessor>
+        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='XPathText' value='byXPath(&apos;//*[text()="+ New Export Request"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div/div[2]/button&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria2755765167-:r4:&apos;)")' selected='false' fallback='true'></accessor>
+        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-1929833.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-1929833.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
+      </dialect>
+    </step>
+    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='4f0a07a8-c77c-44ba-81e1-1b5fdcacce6c' uiType='base'>
+      <dialect type='sahi'>
+        <accessor type='AttrClass' value='button("bg-gray-100 border border-black/10 cursor-default dark:bg-zinc-600 dark:border-white/10 dark:hover:bg-zinc-500 dark:outline-blue-500 dark:pressed:bg-zinc-400 dark:shadow-none dark:text-zinc-100 forced-colors:outline-[Highlight] hover:bg-gray-200 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-gray-300 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-gray-800 text-sm transition")' selected='true' fallback='true'></accessor>
+        <accessor type='Text' value='button("Cancel")' selected='false' fallback='true'></accessor>
+        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria7625230554-:r1g:&apos;]")' selected='false' fallback='true'></accessor>
+        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-gray-100 hover:bg-gray-200 pressed:bg-gray-300 text-gray-800 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:pressed:bg-zinc-400 dark:text-zinc-100 outline-0"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Cancel"]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/button[2]&apos;)' selected='false' fallback='true'></accessor>
+        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria7625230554-:r1g:&apos;)")' selected='false' fallback='true'></accessor>
+        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
+        <accessor type='JQuery' value='byJQuery(&apos;button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-gray-100 hover:bg-gray-200 pressed:bg-gray-300 text-gray-800 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:pressed:bg-zinc-400 dark:text-zinc-100 outline-0"]&apos;)' selected='false' fallback='true'></accessor>
+      </dialect>
+    </step>
+    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='06ec9f97-564d-4c10-ae9b-5ac3d282967e' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+    <step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='2afc2c20-1421-455d-be8d-02919dbb7907' uid='e2e86fc9-fbc9-4e20-b766-b573d211ac96' uiType='base'>
+      <dialect type='sahi'></dialect>
+    </step>
+  </testcase>
