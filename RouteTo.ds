@@ -74,7 +74,7 @@
    <accessor type='Attribute' value='div({&apos;data-focused&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
 </dialect>
 </step>
-<step action='log' value='element' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+<step action='log' value='rowLength' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='unknown' value='' fallback='false' selected='true'/>
 </dialect>
