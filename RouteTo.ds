@@ -57,7 +57,7 @@
    <accessor type='unknown' value='' fallback='false' selected='true'/>
 </dialect>
 </step>
-<step action='store' value='/html/body/div[3]/div/div[2]/div[3]/div/div/table/tbody/tr/td[1]' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='false' sequence='0'>
+<step action='store' value='/html/body/div[3]/div/div[2]/div[3]/div/div/table/tbody/tr/td[1]' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='unknown' value='result' fallback='true' selected='true'/>
 </dialect>
