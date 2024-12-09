@@ -75,7 +75,7 @@
         <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2434983.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-2434983.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
       </dialect>
     </step>
-    <step action='evalAndReturn' value='find("XPath","/html/body/div[3]/div/div[2]/div[3]/div/div/table/tbody/tr/td[1]");' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='32b73dd6-d7c0-4d8a-840d-7cbf03c455fb' uiType='base'>
+    <step action='eval' value='find("XPath","/html/body/div[3]/div/div[2]/div[3]/div/div/table/tbody/tr/td[1]");' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='32b73dd6-d7c0-4d8a-840d-7cbf03c455fb' uiType='base'>
       <dialect type='sahi'>
         <accessor type='unknown' value='element' selected='true' fallback='true'></accessor>
         <accessor type='unknown' value='var ' selected='false' fallback='true'></accessor>
