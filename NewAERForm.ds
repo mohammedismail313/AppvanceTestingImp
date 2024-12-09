@@ -1,575 +1,576 @@
 <?xml version='1.0' encoding='UTF-8'?>
-  <testcase name='' description='script generated from Web Designer' author='Mohanraj_Seerangan_CAYUSE@appvance.com' version='webDesigner'>
-    <dpl filename='{ds}/DPL files/Input_Data.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'></dpl>
-    <fallback useFallback='true'></fallback>
-    <shadowDOM useShadowDOM='true'></shadowDOM>
-    <step action='navigateTo' value='$url' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='3ca6dd0d-fc33-4a3b-9517-7bd317971beb' uiType='base'>
-      <dialect type='sahi'></dialect>
-    </step>
-    <step action='setValue' value='$username' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b98fb8e8-7327-4bd1-bd3c-4aaf6acdf39f' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@id="username"]&apos;)' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='5b6978fb-6db1-4012-8d8c-7b365def616c' uiType='base' isHidden='true'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='setValue' value='$password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='fecaa825-5603-461b-afdd-55e7d51bf17a' uiType='base' isHidden='true'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@id="password"]&apos;)' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='clicking button' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c471c348-cea2-4544-8695-419e5d5615a8' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='byXPath(&apos;//*[@name="signInSubmitButton"]&apos;)' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='verifyContainsText' value='"FT 1"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6c54e849-901d-486b-ae4b-3e5e4ecba46e' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Text' value='span("FT 1")' selected='true' fallback='true'></accessor>
-        <accessor type='Text' value='span("FT 1")' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='2a0e0f2b-ba2a-49b8-a299-c06c923839fe' uiType='conditional'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='verifyContainsText (span("FT 1"),"FT 1");' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='verifyContainsText (span("FT 1"), "FT 1");' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='verifyContainsText (span("FT 1") "FT 1");' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='verifyContainsText span("FT 1") "FT 1";' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='verifyContainsText "FT 1";' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='verifyContainsText span("FT 1");' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='verifyContainsText (span("FT 1"));' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContainsText (span("FT 1"))' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertTextPresent (span("FT 1"))' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertTextPresent ("FT 1")' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContainsText ("FT 1")' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContainsText ("FT 1");' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContainsText (span("FT 1"));' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContainsText span("FT 1");' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContainsText span("FT 1")' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='assertContainsText' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='store' value='"Valid user"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='381b6315-d7a9-4ac5-b60c-a706170f15d2' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='result' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='else' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='520da6b2-cbd6-49d7-9d3a-fffe85176f9a' uiType='conditional'>
-      <dialect type='sahi'></dialect>
-    </step>
-    <step action='store' value='"invaid user"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='1' isVisible='true' parentId='' uid='472acd03-55cf-43e4-a90c-f509ed2b45f1' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='result' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='22e133ca-ccca-4bde-8b6f-90f8a0816d14' uiType='end' sibling='ffdff0af-6cb9-49b3-9350-44eed59a28e1'>
-      <dialect type='sahi'></dialect>
-    </step>
-    <step action='assertContainsText' value='"Site: Master"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='53278911-108f-4518-b18f-4995578630fe' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='span(1, _in(submit({&apos;aria-label&apos;:&apos;Sites&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='span("title[2]")' selected='false' fallback='true'></accessor>
-        <accessor type='Text' value='span("Site: Master")' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='99533390-5e6f-4954-9689-1001661a84cc' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='29bb6bd5-e059-44f7-a141-a5a99a1dedfe' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='span(0, _in(link("2222")))' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='assertContainsText' value='"Site: PT"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='4d7a876b-7ede-4152-9850-47d43bfe43e3' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='span(1, _in(submit("dropdownbars-site-dropdown-button")))' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='false'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b1942f78-d024-4d09-bbae-679dd1083122' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div/div[2]/button&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='Text' value='button("+ New Export Request")' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria9683619779-:r4:&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="+ New Export Request"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria9683619779-:r4:&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='809cf66e-7ae1-4fbb-9a07-a7283fdc3db8' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div/div[2]/button&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Text' value='button("+ New Export Request")' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria9683619779-:r4:&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="+ New Export Request"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria9683619779-:r4:&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='09788df5-aaa4-411c-b8f6-f56bd20a9f10' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='AttrClass' value='button("bg-gray-100 border border-black/10 cursor-default dark:bg-zinc-600 dark:border-white/10 dark:hover:bg-zinc-500 dark:outline-blue-500 dark:pressed:bg-zinc-400 dark:shadow-none dark:text-zinc-100 forced-colors:outline-[Highlight] hover:bg-gray-200 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-gray-300 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-gray-800 text-sm transition")' selected='true' fallback='true'></accessor>
-        <accessor type='Text' value='button("Cancel")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria7625230554-:r1g:&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-gray-100 hover:bg-gray-200 pressed:bg-gray-300 text-gray-800 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:pressed:bg-zinc-400 dark:text-zinc-100 outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Cancel"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/button[2]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria7625230554-:r1g:&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-gray-100 hover:bg-gray-200 pressed:bg-gray-300 text-gray-800 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:pressed:bg-zinc-400 dark:text-zinc-100 outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='Clicking edit button' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='eb87a574-8907-4b26-b41e-035cfb1789f2' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Edit"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='AttrClass' value='button("bg-gray-100 border border-black/10 cursor-default dark:bg-zinc-600 dark:border-white/10 dark:hover:bg-zinc-500 dark:outline-blue-500 dark:pressed:bg-zinc-400 dark:shadow-none dark:text-zinc-100 forced-colors:outline-[Highlight] hover:bg-gray-200 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-gray-300 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-gray-800 text-sm transition")' selected='false' fallback='true'></accessor>
-        <accessor type='Text' value='button("Edit")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria9923247784-:r1g:&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-gray-100 hover:bg-gray-200 pressed:bg-gray-300 text-gray-800 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:pressed:bg-zinc-400 dark:text-zinc-100 outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Edit"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/button[2]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria9923247784-:r1g:&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-gray-100 hover:bg-gray-200 pressed:bg-gray-300 text-gray-800 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:pressed:bg-zinc-400 dark:text-zinc-100 outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2263656.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-2263656.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='1b3b8128-e577-40f4-858d-4762f98fb19d' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_100i&apos;)/div[@class=&apos;sd-dropdown__value&apos;]").xy(0.19, 0.21 )' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='div(0, _in(div("sq_100i"))).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='div(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;}))).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='div("sd-dropdown__value").xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//div[@id=&apos;sq_100i&apos;]/div[1]").xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-dropdown__value"]&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-element__content sd-question__content"] &gt; div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"]&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_100i &gt; .sd-dropdown__value&apos;).xy(0.19, 0.21 )' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c44daac9-78dc-43ea-adcd-9e1c5b09eda0' uiType='base'>
-      <dialect type='sahi'></dialect>
-    </step>
-    <step action='click' value='' type='web' desc='adding Receiving Institution' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='fada6b52-3b08-4493-a482-8d376ec8c99e' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='textbox(0, _in(div("sq_100i")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='textbox(0, _in(div("sq_100i")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='textbox(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='XPathId' value='byXPath(&apos;//*[@id="sq_100i_0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='textbox("sd-dropdown__filter-string-input")' selected='false' fallback='true'></accessor>
-        <accessor type='Id' value='textbox("sq_100i_0")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//input[@id=&apos;sq_100i_0&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-dropdown__filter-string-input"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div/input&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_100i_0&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='textbox({&apos;type&apos;:&apos;text&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"] &gt; input[class="sd-dropdown__filter-string-input"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_100i_0&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5242674.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-5242674.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='setValue' value='$Receiving_Institution_name' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ccdea67f-a97a-4baf-8f4a-b8e070c0b44c' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='textbox(0, _in(div("sq_100i")))' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='keyboardCommand' value='"ENTER"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='1b9fb42d-be6f-4a48-adfd-64ecddd56f9b' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='textbox(0, _in(div("sq_100i")))' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='adding RI address' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='a632b361-3b7f-4dd4-a373-a140e612997a' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='textbox(0, _in(div("sq_101i")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='textbox(0, _in(div("sq_101i")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='textbox(0, _in(div({&apos;aria-label&apos;:&apos;Receiving Institution Shipping Address&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='XPathId' value='byXPath(&apos;//*[@id="sq_101i_0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='textbox("sd-dropdown__filter-string-input[1]")' selected='false' fallback='true'></accessor>
-        <accessor type='Id' value='textbox("sq_101i_0")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//input[@id=&apos;sq_101i_0&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/input&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_101i_0&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='textbox({&apos;placeholder&apos;:&apos;Select...&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"] &gt; input[class="sd-dropdown__filter-string-input"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_101i_0&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2703195.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-2703195.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='setValue' value='$RI_address' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='3e33872a-233b-4065-a035-152db051090b' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='textbox(0, _in(div("sq_101i")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='textbox(0, _in(div("sq_101i")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='textbox(0, _in(div({&apos;aria-label&apos;:&apos;Receiving Institution Shipping Address&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='XPathId' value='byXPath(&apos;//*[@id="sq_101i_0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='textbox("sd-dropdown__filter-string-input[1]")' selected='false' fallback='true'></accessor>
-        <accessor type='Id' value='textbox("sq_101i_0")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//input[@id=&apos;sq_101i_0&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/input&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_101i_0&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='textbox({&apos;placeholder&apos;:&apos;Select...&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"] &gt; input[class="sd-dropdown__filter-string-input"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_101i_0&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2703195.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-2703195.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='keyboardCommand' value='"ENTER"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='e6bc3422-6251-45bf-a3e9-5e8d7e1436ff' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='textbox(0, _in(div("sq_101i")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='textbox(0, _in(div("sq_101i")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='textbox(0, _in(div({&apos;aria-label&apos;:&apos;Receiving Institution Shipping Address&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='XPathId' value='byXPath(&apos;//*[@id="sq_101i_0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='textbox("sd-dropdown__filter-string-input[1]")' selected='false' fallback='true'></accessor>
-        <accessor type='Id' value='textbox("sq_101i_0")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//input[@id=&apos;sq_101i_0&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/input&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_101i_0&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='textbox({&apos;placeholder&apos;:&apos;Select...&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"] &gt; input[class="sd-dropdown__filter-string-input"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_101i_0&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2703195.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-2703195.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='24f506cf-7a35-46b1-be91-606d0a72f0a7' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='span("Exporter Details")' selected='true' fallback='true'></accessor>
-        <accessor type='AttrClass' value='button("bg-bluecayuse-500 border border-black/10 cursor-pointer dark:border-white/10 dark:outline-blue-500 dark:shadow-none false flex font-bold forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 items-center justify-between outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-2 py-2 rounded-none shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition w-full")' selected='false' fallback='true'></accessor>
-        <accessor type='Text' value='button("Exporter Details")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria4688073826-:r1n:&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 text-center transition border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 outline-0 flex items-center justify-between px-2 py-2 cursor-pointer text-sm font-bold rounded-none w-full bg-bluecayuse-500 text-white false"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/button&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria4688073826-:r1n:&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="grid grid-cols-12 pt-2 pr-2 pl-2"] &gt; div[class="col-span-3 pr-3"] &gt; div[class="border border-bluecayuse-500 rounded"] &gt; div[class="relative"] &gt; button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 text-center transition border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 outline-0 flex items-center justify-between px-2 py-2 cursor-pointer text-sm font-bold rounded-none w-full bg-bluecayuse-500 text-white false"]&apos;)' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='4586b621-d72c-476a-8ac1-20d8e8a234a7' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='span("Exporter Details")' selected='true' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='adding Exporting PI' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='00f1d2d9-e718-46b4-b435-b8fbafe5d283' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='div(0, _in(div("sq_109i"))).xy(0.06, 0.25 )' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='div(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;}))).xy(0.06, 0.25 )' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='div("sd-dropdown__value").xy(0.06, 0.25 )' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//div[@id=&apos;sq_109i&apos;]/div[1]").xy(0.06, 0.25 )' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-dropdown__value"]&apos;).xy(0.06, 0.25 )' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div&apos;).xy(0.06, 0.25 )' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_109i&apos;)/div[@class=&apos;sd-dropdown__value&apos;]").xy(0.06, 0.25 )' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-element__content sd-question__content"] &gt; div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"]&apos;).xy(0.06, 0.25 )' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_109i &gt; .sd-dropdown__value&apos;).xy(0.06, 0.25 )' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='setValue' value='$Exporting_PI' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='3da2a4a8-45ef-4b7f-babc-46b6d83c249d' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='textbox(0, _in(div("sq_109i")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='textbox(0, _in(div("sq_109i")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='textbox(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='XPathId' value='byXPath(&apos;//*[@id="sq_109i_0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='textbox("sd-dropdown__filter-string-input")' selected='false' fallback='true'></accessor>
-        <accessor type='Id' value='textbox("sq_109i_0")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//input[@id=&apos;sq_109i_0&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-dropdown__filter-string-input"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div/input&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_109i_0&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='textbox({&apos;type&apos;:&apos;text&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"] &gt; input[class="sd-dropdown__filter-string-input"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_109i_0&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-7643672.png&apos;),{x:0,y:0,w:1,h:1,cx:0.55,cy:0.50}))' selected='false' fallback='false' imgPath='img-7643672.png' coords='{x:0,y:0,w:1,h:1,cx:0.55,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='keyboardCommand' value='"ENTER"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b4f293a2-bb4b-4e19-be4f-9842e60a816e' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='textbox(0, _in(div("sq_109i")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='textbox(0, _in(div("sq_109i")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='textbox(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='XPathId' value='byXPath(&apos;//*[@id="sq_109i_0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='textbox("sd-dropdown__filter-string-input")' selected='false' fallback='true'></accessor>
-        <accessor type='Id' value='textbox("sq_109i_0")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//input[@id=&apos;sq_109i_0&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-dropdown__filter-string-input"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div/input&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_109i_0&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='textbox({&apos;type&apos;:&apos;text&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"] &gt; input[class="sd-dropdown__filter-string-input"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_109i_0&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-7643672.png&apos;),{x:0,y:0,w:1,h:1,cx:0.55,cy:0.50}))' selected='false' fallback='false' imgPath='img-7643672.png' coords='{x:0,y:0,w:1,h:1,cx:0.55,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='71f546ee-fc7c-40c8-9166-985136449811' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Text' value='span("General Information")' selected='true' fallback='true'></accessor>
-        <accessor type='Text' value='span("General Information")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria2328264152-:r1s:&apos;]/span")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="General Information"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div[3]/button/span&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria2328264152-:r1s:&apos;)/span[1]")' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-3924193.png&apos;),{x:0,y:0,w:1,h:1,cx:0.43,cy:0.50}))' selected='false' fallback='false' imgPath='img-3924193.png' coords='{x:0,y:0,w:1,h:1,cx:0.43,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='1fdc739b-99de-4015-ab40-815a6f46b1dd' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Text' value='span("General Information")' selected='true' fallback='true'></accessor>
-        <accessor type='Text' value='span("General Information")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria2328264152-:r1s:&apos;]/span")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="General Information"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div[3]/button/span&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria2328264152-:r1s:&apos;)/span[1]")' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-3924193.png&apos;),{x:0,y:0,w:1,h:1,cx:0.43,cy:0.50}))' selected='false' fallback='false' imgPath='img-3924193.png' coords='{x:0,y:0,w:1,h:1,cx:0.43,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='adding shipping date' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='d0cb522d-4c4f-44fa-ae38-1166c384d9e9' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='datebox(0, _in(div("sq_112")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='datebox(0, _in(div("sq_112")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='datebox(0, _in(div({&apos;id&apos;:&apos;sq_112&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='XPathId' value='byXPath(&apos;//*[@id="sq_112i"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='datebox("sd-input sd-text")' selected='false' fallback='true'></accessor>
-        <accessor type='Id' value='datebox("sq_112i")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//input[@id=&apos;sq_112i&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-input sd-text"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/input&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_112i&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='datebox({&apos;type&apos;:&apos;date&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-element--nested sd-element sd-question sd-row__question sd-question--title-top sd-row__question--small sd-question--answered"] &gt; div[class="sd-text__content sd-question__content"] &gt; input[class="sd-input sd-text"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_112i&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5807398.png&apos;),{x:0,y:0,w:1,h:1,cx:0.58,cy:0.50}))' selected='false' fallback='false' imgPath='img-5807398.png' coords='{x:0,y:0,w:1,h:1,cx:0.58,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='setValue' value='$Request_Shipping_date' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='29a7898a-2855-4f4b-bb1e-0fbe26ad5dd3' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='datebox(0, _in(div("sq_112")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='datebox(0, _in(div("sq_112")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='datebox(0, _in(div({&apos;id&apos;:&apos;sq_112&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='XPathId' value='byXPath(&apos;//*[@id="sq_112i"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='datebox("sd-input sd-text")' selected='false' fallback='true'></accessor>
-        <accessor type='Id' value='datebox("sq_112i")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//input[@id=&apos;sq_112i&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-input sd-text"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/input&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_112i&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='datebox({&apos;type&apos;:&apos;date&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-element--nested sd-element sd-question sd-row__question sd-question--title-top sd-row__question--small sd-question--answered"] &gt; div[class="sd-text__content sd-question__content"] &gt; input[class="sd-input sd-text"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_112i&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5807398.png&apos;),{x:0,y:0,w:1,h:1,cx:0.58,cy:0.50}))' selected='false' fallback='false' imgPath='img-5807398.png' coords='{x:0,y:0,w:1,h:1,cx:0.58,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='keyboardCommand' value='"ENTER"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='612272f0-e255-4189-a1f9-d4725f90fd53' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='datebox(0, _in(div("sq_112")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='datebox(0, _in(div("sq_112")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='datebox(0, _in(div({&apos;id&apos;:&apos;sq_112&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='XPathId' value='byXPath(&apos;//*[@id="sq_112i"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='datebox("sd-input sd-text")' selected='false' fallback='true'></accessor>
-        <accessor type='Id' value='datebox("sq_112i")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//input[@id=&apos;sq_112i&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-input sd-text"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/input&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_112i&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='datebox({&apos;type&apos;:&apos;date&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-element--nested sd-element sd-question sd-row__question sd-question--title-top sd-row__question--small sd-question--answered"] &gt; div[class="sd-text__content sd-question__content"] &gt; input[class="sd-input sd-text"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_112i&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5807398.png&apos;),{x:0,y:0,w:1,h:1,cx:0.58,cy:0.50}))' selected='false' fallback='false' imgPath='img-5807398.png' coords='{x:0,y:0,w:1,h:1,cx:0.58,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ed777bb5-4b71-462e-a59a-6c2ba3ffaecb' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='div(0, _in(div("sq_113i")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='div(0, _in(div("sq_113i")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='div(0, _in(div({&apos;id&apos;:&apos;sq_113i&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='div("sd-dropdown__value")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//div[@id=&apos;sq_113i&apos;]/div[1]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-dropdown__value"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_113i&apos;)/div[@class=&apos;sd-dropdown__value&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-element__content sd-question__content"] &gt; div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_113i &gt; .sd-dropdown__value&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5572296.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-5572296.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='setValue' value='$shipping_charges' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='b486e922-9788-4895-8ee8-7d4211831b76' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='unknown' value='textbox(0, _in(div("sq_113i")))' selected='true' fallback='true'></accessor>
-        <accessor type='unknown' value='div(0, _in(div("sq_113i")))' selected='false' fallback='true'></accessor>
-        <accessor type='unknown' value='' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='keyboardCommand' value='"ENTER"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='69ade0db-d737-4a68-9adb-e4c2d928ad7f' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Parent' value='div(0, _in(div("sq_113i")))' selected='true' fallback='true'></accessor>
-        <accessor type='Parent' value='div(0, _in(div("sq_113i")))' selected='false' fallback='true'></accessor>
-        <accessor type='Parent' value='div(0, _in(div({&apos;id&apos;:&apos;sq_113i&apos;})))' selected='false' fallback='true'></accessor>
-        <accessor type='AttrClass' value='div("sd-dropdown__value")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//div[@id=&apos;sq_113i&apos;]/div[1]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="sd-dropdown__value"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_113i&apos;)/div[@class=&apos;sd-dropdown__value&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sd-element__content sd-question__content"] &gt; div[class="sd-selectbase"] &gt; div[class="sv-dropdown_select-wrapper"] &gt; div[class="sd-input sd-dropdown text-black"] &gt; div[class="sd-dropdown__value"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;#sq_113i &gt; .sd-dropdown__value&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5572296.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-5572296.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='cc4613d6-d91e-46d3-b235-b9ffed5194ea' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Text' value='span("Animal Details")' selected='true' fallback='true'></accessor>
-        <accessor type='Text' value='span("Animal Details")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria2328264152-:r21:&apos;]/span")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Animal Details"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div[4]/button/span&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria2328264152-:r21:&apos;)/span[1]")' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2192454.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-2192454.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='doubleClick' value='' type='web' desc='Clicking Animal details section' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='33f4125c-7cdf-470f-b451-35bbb3989735' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='Text' value='span("Animal Details")' selected='true' fallback='true'></accessor>
-        <accessor type='Text' value='span("Animal Details")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria2328264152-:r21:&apos;]/span")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Animal Details"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div[4]/button/span&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria2328264152-:r21:&apos;)/span[1]")' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2192454.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' selected='false' fallback='false' imgPath='img-2192454.png' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='a20aa53f-8591-4ef1-a1f8-d61f7b85dea7' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='AttrClass' value='span("sv-string-viewer sv-string-viewer--multiline[2]")' selected='true' fallback='true'></accessor>
-        <accessor type='Text' value='span("No[1]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//div[@id=&apos;sq_118&apos;]/div[2]/div/label/div[1]/span/span")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="No"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/label/div/span/span&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;sq_118&apos;)/div[@class=&apos;sd-element__content sd-question__content&apos;]/div[@class=&apos;sv_qcbc sv_qbln sd-scrollable-container sd-boolean-root&apos;]/label[@class=&apos;sd-boolean sd-boolean--allowhover sd-boolean--indeterminate&apos;]/div[@class=&apos;sd-boolean__thumb-ghost&apos;]/span[@class=&apos;sd-boolean__label&apos;]/span[@class=&apos;sv-string-viewer sv-string-viewer--multiline&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="sv_qcbc sv_qbln sd-scrollable-container sd-boolean-root"] &gt; label[class="sd-boolean sd-boolean--allowhover sd-boolean--indeterminate"] &gt; div[class="sd-boolean__thumb-ghost"] &gt; span[class="sd-boolean__label"] &gt; span[class="sv-string-viewer sv-string-viewer--multiline"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;.sv_qcbc.sv_qbln.sd-scrollable-container.sd-boolean-root &gt; .sd-boolean.sd-boolean--allowhover.sd-boolean--indeterminate &gt; .sd-boolean__thumb-ghost &gt; .sd-boolean__label &gt; .sv-string-viewer.sv-string-viewer--multiline&apos;)' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='091552e2-69e0-4eea-92ae-487c8ffa0bd8' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='AttrClass' value='div("[--color:theme(colors.gray.700)] bg-[--color] border-2 border-[--color] dark:[--color:theme(colors.slate.300)] dark:group-pressed:[--color:theme(colors.slate.200)] dark:outline-blue-500 flex flex-shrink-0 forced-colors:![--color:Highlight] forced-colors:outline-[Highlight] group-pressed:[--color:theme(colors.gray.800)] h-5 items-center justify-center outline outline-0 outline-blue-600 outline-offset-2 rounded transition w-5")' selected='true' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//table[@id=&apos;react-aria2342477313-:r42:&apos;]/tbody/tr[1]/td[1]/label/div")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-[--color] border-[--color] [--color:theme(colors.gray.700)] group-pressed:[--color:theme(colors.gray.800)] dark:[--color:theme(colors.slate.300)] dark:group-pressed:[--color:theme(colors.slate.200)] forced-colors:![--color:Highlight] outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[4]/div/div/div[2]/div/div/div[5]/div/div/table/tbody/tr/td/label/div&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria2342477313-:r42:&apos;)/tbody[@class=&apos;react-aria-TableBody&apos;]/tr[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] group/row relative cursor-default select-none -outline-offset-2 text-gray-900 disabled:text-gray-300 dark:text-zinc-200 dark:disabled:text-zinc-600 text-sm hover:bg-gray-100 dark:hover:bg-zinc-700/60 selected:bg-blue-100 selected:hover:bg-blue-200 dark:selected:bg-blue-700/30 dark:selected:hover:bg-blue-700/40 outline-0&apos;]/td[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] border-b dark:border-b-zinc-700 group-last/row:border-b-0 [--selected-border:theme(colors.blue.200)] dark:[--selected-border:theme(colors.blue.900)] group-selected/row:border-[--selected-border] [:has(+[data-selected])_&amp;]:border-[--selected-border] p-2 truncate -outline-offset-2 outline-0&apos;]/label[@class=&apos;flex gap-2 items-center group text-sm transition text-gray-800 dark:text-zinc-200&apos;]/div[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-[--color] border-[--color] [--color:theme(colors.gray.700)] group-pressed:[--color:theme(colors.gray.800)] dark:[--color:theme(colors.slate.300)] dark:group-pressed:[--color:theme(colors.slate.200)] forced-colors:![--color:Highlight] outline-0&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='TableXPath' value='byXPath(&apos;//tbody//tr[1]//td[1]//label//div[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-[--color] border-[--color] [--color:theme(colors.gray.700)] group-pressed:[--color:theme(colors.gray.800)] dark:[--color:theme(colors.slate.300)] dark:group-pressed:[--color:theme(colors.slate.200)] forced-colors:![--color:Highlight] outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;tbody[class="react-aria-TableBody"] &gt; tr[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] group/row relative cursor-default select-none -outline-offset-2 text-gray-900 disabled:text-gray-300 dark:text-zinc-200 dark:disabled:text-zinc-600 text-sm hover:bg-gray-100 dark:hover:bg-zinc-700/60 selected:bg-blue-100 selected:hover:bg-blue-200 dark:selected:bg-blue-700/30 dark:selected:hover:bg-blue-700/40 outline-0"] &gt; td[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] border-b dark:border-b-zinc-700 group-last/row:border-b-0 [--selected-border:theme(colors.blue.200)] dark:[--selected-border:theme(colors.blue.900)] group-selected/row:border-[--selected-border] [:has(+[data-selected])_&amp;]:border-[--selected-border] p-2 truncate -outline-offset-2 outline-0"] &gt; label[class="flex gap-2 items-center group text-sm transition text-gray-800 dark:text-zinc-200"] &gt; div[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-[--color] border-[--color] [--color:theme(colors.gray.700)] group-pressed:[--color:theme(colors.gray.800)] dark:[--color:theme(colors.slate.300)] dark:group-pressed:[--color:theme(colors.slate.200)] forced-colors:![--color:Highlight] outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='0df808c0-21af-4570-9f96-a94d23fabe25' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='XPath' value='byXPath("//table[@id=&apos;react-aria7447301843-:r42:&apos;]/tbody/tr[1]/td[1]/label/div")' selected='true' fallback='true'></accessor>
-        <accessor type='AttrClass' value='div("[--color:theme(colors.gray.400)] bg-white border-2 border-[--color] dark:[--color:colors.zinc-400)] dark:bg-zinc-900 dark:group-pressed:[--color:theme(colors.zinc.300)] dark:outline-blue-500 flex flex-shrink-0 forced-colors:outline-[Highlight] group-pressed:[--color:theme(colors.gray.500)] h-5 items-center justify-center outline outline-0 outline-blue-600 outline-offset-2 rounded transition w-5")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//table[@id=&apos;react-aria7447301843-:r42:&apos;]/tbody/tr[1]/td[1]/label/div")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-white dark:bg-zinc-900 border-[--color] [--color:theme(colors.gray.400)] dark:[--color:colors.zinc-400)] group-pressed:[--color:theme(colors.gray.500)] dark:group-pressed:[--color:theme(colors.zinc.300)] outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[4]/div/div/div[2]/div/div/div[5]/div/div/table/tbody/tr/td/label/div&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria7447301843-:r42:&apos;)/tbody[@class=&apos;react-aria-TableBody&apos;]/tr[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] group/row relative cursor-default select-none -outline-offset-2 text-gray-900 disabled:text-gray-300 dark:text-zinc-200 dark:disabled:text-zinc-600 text-sm hover:bg-gray-100 dark:hover:bg-zinc-700/60 selected:bg-blue-100 selected:hover:bg-blue-200 dark:selected:bg-blue-700/30 dark:selected:hover:bg-blue-700/40 outline-0&apos;]/td[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] border-b dark:border-b-zinc-700 group-last/row:border-b-0 [--selected-border:theme(colors.blue.200)] dark:[--selected-border:theme(colors.blue.900)] group-selected/row:border-[--selected-border] [:has(+[data-selected])_&amp;]:border-[--selected-border] p-2 truncate -outline-offset-2 outline-0&apos;]/label[@class=&apos;flex gap-2 items-center group text-sm transition text-gray-800 dark:text-zinc-200&apos;]/div[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-white dark:bg-zinc-900 border-[--color] [--color:theme(colors.gray.400)] dark:[--color:colors.zinc-400)] group-pressed:[--color:theme(colors.gray.500)] dark:group-pressed:[--color:theme(colors.zinc.300)] outline-0&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='TableXPath' value='byXPath(&apos;//tbody//tr[1]//td[1]//label//div[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-white dark:bg-zinc-900 border-[--color] [--color:theme(colors.gray.400)] dark:[--color:colors.zinc-400)] group-pressed:[--color:theme(colors.gray.500)] dark:group-pressed:[--color:theme(colors.zinc.300)] outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;tbody[class="react-aria-TableBody"] &gt; tr[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] group/row relative cursor-default select-none -outline-offset-2 text-gray-900 disabled:text-gray-300 dark:text-zinc-200 dark:disabled:text-zinc-600 text-sm hover:bg-gray-100 dark:hover:bg-zinc-700/60 selected:bg-blue-100 selected:hover:bg-blue-200 dark:selected:bg-blue-700/30 dark:selected:hover:bg-blue-700/40 outline-0"] &gt; td[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] border-b dark:border-b-zinc-700 group-last/row:border-b-0 [--selected-border:theme(colors.blue.200)] dark:[--selected-border:theme(colors.blue.900)] group-selected/row:border-[--selected-border] [:has(+[data-selected])_&amp;]:border-[--selected-border] p-2 truncate -outline-offset-2 outline-0"] &gt; label[class="flex gap-2 items-center group text-sm transition text-gray-800 dark:text-zinc-200"] &gt; div[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-white dark:bg-zinc-900 border-[--color] [--color:theme(colors.gray.400)] dark:[--color:colors.zinc-400)] group-pressed:[--color:theme(colors.gray.500)] dark:group-pressed:[--color:theme(colors.zinc.300)] outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='c2115c5e-ca3f-4304-b563-d7abb584f4f5' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Add"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition")' selected='false' fallback='true'></accessor>
-        <accessor type='Text' value='button("Add")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria5791597121-:r40:&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Add"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[4]/div/div/div[2]/div/div/div[4]/div[2]/button&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria5791597121-:r40:&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2817703.png&apos;),{x:0,y:0,w:1,h:1,cx:0.52,cy:0.50}))' selected='false' fallback='false' imgPath='img-2817703.png' coords='{x:0,y:0,w:1,h:1,cx:0.52,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='ef6c4bf7-d8ed-4db0-a548-128d7c855967' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Add"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition")' selected='false' fallback='true'></accessor>
-        <accessor type='Text' value='button("Add")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria5791597121-:r40:&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Add"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[4]/div/div/div[2]/div/div/div[4]/div[2]/button&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria5791597121-:r40:&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2817703.png&apos;),{x:0,y:0,w:1,h:1,cx:0.52,cy:0.50}))' selected='false' fallback='false' imgPath='img-2817703.png' coords='{x:0,y:0,w:1,h:1,cx:0.52,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='915f7c06-863d-4ec4-aea9-f9946de7137d' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Save"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 mr-2 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition")' selected='false' fallback='true'></accessor>
-        <accessor type='Text' value='button("Save")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria5791597121-:r1e:&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Save"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/button&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria5791597121-:r1e:&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5665711.png&apos;),{x:0,y:0,w:1,h:1,cx:0.35,cy:0.50}))' selected='false' fallback='false' imgPath='img-5665711.png' coords='{x:0,y:0,w:1,h:1,cx:0.35,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='dd108405-104d-4223-a1fd-cb797e6040e1' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Save"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 mr-2 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition")' selected='false' fallback='true'></accessor>
-        <accessor type='Text' value='button("Save")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria5791597121-:r1e:&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Save"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/button&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria5791597121-:r1e:&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5665711.png&apos;),{x:0,y:0,w:1,h:1,cx:0.35,cy:0.50}))' selected='false' fallback='false' imgPath='img-5665711.png' coords='{x:0,y:0,w:1,h:1,cx:0.35,cy:0.50}'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='6a73958b-32e0-4bba-ab85-e2f32422f98f' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Submit Request"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 mr-2 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition w-36")' selected='false' fallback='true'></accessor>
-        <accessor type='Text' value='button("Submit Request")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria5791597121-:r26:&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2 w-36"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Submit Request"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/button&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria5791597121-:r26:&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="pb-2"] &gt; button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2 w-36"]&apos;)' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-    <step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0' hasBreakPoint='false' indentLevel='0' isVisible='true' parentId='' uid='bad5ff6c-a93e-4ca6-b2f0-526c80a50e53' uiType='base'>
-      <dialect type='sahi'>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Submit Request"]&apos;)' selected='true' fallback='true'></accessor>
-        <accessor type='AttrClass' value='button("bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 mr-2 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition w-36")' selected='false' fallback='true'></accessor>
-        <accessor type='Text' value='button("Submit Request")' selected='false' fallback='true'></accessor>
-        <accessor type='XPath' value='byXPath("//button[@id=&apos;react-aria5791597121-:r26:&apos;]")' selected='false' fallback='true'></accessor>
-        <accessor type='XPathClass' value='byXPath(&apos;//*[@class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2 w-36"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='XPathText' value='byXPath(&apos;//*[text()="Submit Request"]&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/button&apos;)' selected='false' fallback='true'></accessor>
-        <accessor type='RelativeXPath' value='byXPath("id(&apos;react-aria5791597121-:r26:&apos;)")' selected='false' fallback='true'></accessor>
-        <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' selected='false' fallback='true'></accessor>
-        <accessor type='JQuery' value='byJQuery(&apos;div[class="pb-2"] &gt; button[class="outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2 w-36"]&apos;)' selected='false' fallback='true'></accessor>
-      </dialect>
-    </step>
-  </testcase>
+<testcase   name= 'NewAERForm.ds' description= '' author= 'Mohanraj_Seerangan_CAYUSE@appvance.com' version= ''>
+<dpl filename='{ds}/DPL files/Input_Data.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'/>
+<fallback useFallback='true'/>
+<shadowDOM useShadowDOM='true'/>
+<step action='navigateTo' value='$url' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='' fallback='false' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='$username' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;username&quot;]&apos;)' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='true' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;password&quot;]&apos;)' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='$password' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='true' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='byXPath(&apos;//*[@id=&quot;password&quot;]&apos;)' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='clicking button' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='byXPath(&apos;//*[@name=&quot;signInSubmitButton&quot;]&apos;)' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='verifyContainsText' value='"FT 1"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Text' value='span(&quot;FT 1&quot;)' fallback='true' selected='true'/>
+   <accessor type='Text' value='span(&quot;FT 1&quot;)' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='if' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='verifyContainsText (span(&quot;FT 1&quot;),&quot;FT 1&quot;);' fallback='true' selected='true'/>
+   <accessor type='unknown' value='verifyContainsText (span(&quot;FT 1&quot;), &quot;FT 1&quot;);' fallback='true' selected='false'/>
+   <accessor type='unknown' value='verifyContainsText (span(&quot;FT 1&quot;) &quot;FT 1&quot;);' fallback='true' selected='false'/>
+   <accessor type='unknown' value='verifyContainsText span(&quot;FT 1&quot;) &quot;FT 1&quot;;' fallback='true' selected='false'/>
+   <accessor type='unknown' value='verifyContainsText &quot;FT 1&quot;;' fallback='true' selected='false'/>
+   <accessor type='unknown' value='verifyContainsText span(&quot;FT 1&quot;);' fallback='true' selected='false'/>
+   <accessor type='unknown' value='verifyContainsText (span(&quot;FT 1&quot;));' fallback='true' selected='false'/>
+   <accessor type='unknown' value='assertContainsText (span(&quot;FT 1&quot;))' fallback='true' selected='false'/>
+   <accessor type='unknown' value='assertTextPresent (span(&quot;FT 1&quot;))' fallback='true' selected='false'/>
+   <accessor type='unknown' value='assertTextPresent (&quot;FT 1&quot;)' fallback='true' selected='false'/>
+   <accessor type='unknown' value='assertContainsText (&quot;FT 1&quot;)' fallback='true' selected='false'/>
+   <accessor type='unknown' value='assertContainsText (&quot;FT 1&quot;);' fallback='true' selected='false'/>
+   <accessor type='unknown' value='assertContainsText (span(&quot;FT 1&quot;));' fallback='true' selected='false'/>
+   <accessor type='unknown' value='assertContainsText span(&quot;FT 1&quot;);' fallback='true' selected='false'/>
+   <accessor type='unknown' value='assertContainsText span(&quot;FT 1&quot;)' fallback='true' selected='false'/>
+   <accessor type='unknown' value='assertContainsText' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='store' value='"Valid user"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='result' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='else' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='' fallback='false' selected='true'/>
+</dialect>
+</step>
+<step action='store' value='"invaid user"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='result' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='endif' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='' fallback='false' selected='true'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"Site: Master"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='span(1, _in(submit(&quot;dropdownbars-site-dropdown-button&quot;)))' fallback='true' selected='true'/>
+   <accessor type='Parent' value='span(1, _in(submit(&quot;dropdownbars-site-dropdown-button&quot;)))' fallback='true' selected='false'/>
+   <accessor type='Parent' value='span(1, _in(submit({&apos;aria-label&apos;:&apos;Sites&apos;})))' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='span(&quot;title[2]&quot;)' fallback='true' selected='false'/>
+   <accessor type='Text' value='span(&quot;Site: Master&quot;)' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='span(1, _in(submit(&quot;dropdownbars-site-dropdown-button&quot;)))' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='span(0, _in(link(&quot;2222&quot;)))' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='assertContainsText' value='"Site: PT"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='span(1, _in(submit(&quot;dropdownbars-site-dropdown-button&quot;)))' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div/div[2]/button&apos;)' fallback='true' selected='true'/>
+   <accessor type='Text' value='button(&quot;+ New Export Request&quot;)' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='button(&quot;bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria9683619779-:r4:&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;+ New Export Request&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria9683619779-:r4:&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;+ New Export Request&quot;]&apos;)' fallback='true' selected='true'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div/div[2]/button&apos;)' fallback='true' selected='false'/>
+   <accessor type='Text' value='button(&quot;+ New Export Request&quot;)' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='button(&quot;bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria9683619779-:r4:&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria9683619779-:r4:&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='AttrClass' value='button(&quot;bg-gray-100 border border-black/10 cursor-default dark:bg-zinc-600 dark:border-white/10 dark:hover:bg-zinc-500 dark:outline-blue-500 dark:pressed:bg-zinc-400 dark:shadow-none dark:text-zinc-100 forced-colors:outline-[Highlight] hover:bg-gray-200 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-gray-300 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-gray-800 text-sm transition&quot;)' fallback='true' selected='true'/>
+   <accessor type='Text' value='button(&quot;Cancel&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria7625230554-:r1g:&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-gray-100 hover:bg-gray-200 pressed:bg-gray-300 text-gray-800 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:pressed:bg-zinc-400 dark:text-zinc-100 outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Cancel&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/button[2]&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria7625230554-:r1g:&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-gray-100 hover:bg-gray-200 pressed:bg-gray-300 text-gray-800 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:pressed:bg-zinc-400 dark:text-zinc-100 outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='Clicking edit button' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Edit&quot;]&apos;)' fallback='true' selected='true'/>
+   <accessor type='AttrClass' value='button(&quot;bg-gray-100 border border-black/10 cursor-default dark:bg-zinc-600 dark:border-white/10 dark:hover:bg-zinc-500 dark:outline-blue-500 dark:pressed:bg-zinc-400 dark:shadow-none dark:text-zinc-100 forced-colors:outline-[Highlight] hover:bg-gray-200 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-gray-300 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-gray-800 text-sm transition&quot;)' fallback='true' selected='false'/>
+   <accessor type='Text' value='button(&quot;Edit&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria9923247784-:r1g:&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-gray-100 hover:bg-gray-200 pressed:bg-gray-300 text-gray-800 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:pressed:bg-zinc-400 dark:text-zinc-100 outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Edit&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/button[2]&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria9923247784-:r1g:&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-gray-100 hover:bg-gray-200 pressed:bg-gray-300 text-gray-800 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:pressed:bg-zinc-400 dark:text-zinc-100 outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2263656.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}' imgPath='img-2263656.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='true' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_100i&apos;)/div[@class=&apos;sd-dropdown__value&apos;]&quot;).xy(0.19, 0.21 )' fallback='true' selected='true'/>
+   <accessor type='Parent' value='div(0, _in(div(&quot;sq_100i&quot;))).xy(0.19, 0.21 )' fallback='true' selected='false'/>
+   <accessor type='Parent' value='div(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;}))).xy(0.19, 0.21 )' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='div(&quot;sd-dropdown__value&quot;).xy(0.19, 0.21 )' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//div[@id=&apos;sq_100i&apos;]/div[1]&quot;).xy(0.19, 0.21 )' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;sd-dropdown__value&quot;]&apos;).xy(0.19, 0.21 )' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div&apos;).xy(0.19, 0.21 )' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-element__content sd-question__content&quot;] &gt; div[class=&quot;sd-selectbase&quot;] &gt; div[class=&quot;sv-dropdown_select-wrapper&quot;] &gt; div[class=&quot;sd-input sd-dropdown text-black&quot;] &gt; div[class=&quot;sd-dropdown__value&quot;]&apos;).xy(0.19, 0.21 )' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_100i &gt; .sd-dropdown__value&apos;).xy(0.19, 0.21 )' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='' fallback='false' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='adding Receiving Institution' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='textbox(0, _in(div(&quot;sq_100i&quot;)))' fallback='true' selected='true'/>
+   <accessor type='Parent' value='textbox(0, _in(div(&quot;sq_100i&quot;)))' fallback='true' selected='false'/>
+   <accessor type='Parent' value='textbox(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;})))' fallback='true' selected='false'/>
+   <accessor type='XPathId' value='byXPath(&apos;//*[@id=&quot;sq_100i_0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='textbox(&quot;sd-dropdown__filter-string-input&quot;)' fallback='true' selected='false'/>
+   <accessor type='Id' value='textbox(&quot;sq_100i_0&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//input[@id=&apos;sq_100i_0&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;sd-dropdown__filter-string-input&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div/input&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_100i_0&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='textbox({&apos;type&apos;:&apos;text&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-selectbase&quot;] &gt; div[class=&quot;sv-dropdown_select-wrapper&quot;] &gt; div[class=&quot;sd-input sd-dropdown text-black&quot;] &gt; div[class=&quot;sd-dropdown__value&quot;] &gt; input[class=&quot;sd-dropdown__filter-string-input&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_100i_0&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5242674.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}' imgPath='img-5242674.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$Receiving_Institution_name' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='textbox(0, _in(div(&quot;sq_100i&quot;)))' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"ENTER"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='textbox(0, _in(div(&quot;sq_100i&quot;)))' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='adding RI address' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='textbox(0, _in(div(&quot;sq_101i&quot;)))' fallback='true' selected='true'/>
+   <accessor type='Parent' value='textbox(0, _in(div(&quot;sq_101i&quot;)))' fallback='true' selected='false'/>
+   <accessor type='Parent' value='textbox(0, _in(div({&apos;aria-label&apos;:&apos;Receiving Institution Shipping Address&apos;})))' fallback='true' selected='false'/>
+   <accessor type='XPathId' value='byXPath(&apos;//*[@id=&quot;sq_101i_0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='textbox(&quot;sd-dropdown__filter-string-input[1]&quot;)' fallback='true' selected='false'/>
+   <accessor type='Id' value='textbox(&quot;sq_101i_0&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//input[@id=&apos;sq_101i_0&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/input&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_101i_0&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='textbox({&apos;placeholder&apos;:&apos;Select...&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-selectbase&quot;] &gt; div[class=&quot;sv-dropdown_select-wrapper&quot;] &gt; div[class=&quot;sd-input sd-dropdown text-black&quot;] &gt; div[class=&quot;sd-dropdown__value&quot;] &gt; input[class=&quot;sd-dropdown__filter-string-input&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_101i_0&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2703195.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}' imgPath='img-2703195.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$RI_address' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='textbox(0, _in(div(&quot;sq_101i&quot;)))' fallback='true' selected='true'/>
+   <accessor type='Parent' value='textbox(0, _in(div(&quot;sq_101i&quot;)))' fallback='true' selected='false'/>
+   <accessor type='Parent' value='textbox(0, _in(div({&apos;aria-label&apos;:&apos;Receiving Institution Shipping Address&apos;})))' fallback='true' selected='false'/>
+   <accessor type='XPathId' value='byXPath(&apos;//*[@id=&quot;sq_101i_0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='textbox(&quot;sd-dropdown__filter-string-input[1]&quot;)' fallback='true' selected='false'/>
+   <accessor type='Id' value='textbox(&quot;sq_101i_0&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//input[@id=&apos;sq_101i_0&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/input&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_101i_0&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='textbox({&apos;placeholder&apos;:&apos;Select...&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-selectbase&quot;] &gt; div[class=&quot;sv-dropdown_select-wrapper&quot;] &gt; div[class=&quot;sd-input sd-dropdown text-black&quot;] &gt; div[class=&quot;sd-dropdown__value&quot;] &gt; input[class=&quot;sd-dropdown__filter-string-input&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_101i_0&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2703195.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}' imgPath='img-2703195.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"ENTER"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='textbox(0, _in(div(&quot;sq_101i&quot;)))' fallback='true' selected='true'/>
+   <accessor type='Parent' value='textbox(0, _in(div(&quot;sq_101i&quot;)))' fallback='true' selected='false'/>
+   <accessor type='Parent' value='textbox(0, _in(div({&apos;aria-label&apos;:&apos;Receiving Institution Shipping Address&apos;})))' fallback='true' selected='false'/>
+   <accessor type='XPathId' value='byXPath(&apos;//*[@id=&quot;sq_101i_0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='textbox(&quot;sd-dropdown__filter-string-input[1]&quot;)' fallback='true' selected='false'/>
+   <accessor type='Id' value='textbox(&quot;sq_101i_0&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//input[@id=&apos;sq_101i_0&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div/input&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_101i_0&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='textbox({&apos;placeholder&apos;:&apos;Select...&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-selectbase&quot;] &gt; div[class=&quot;sv-dropdown_select-wrapper&quot;] &gt; div[class=&quot;sd-input sd-dropdown text-black&quot;] &gt; div[class=&quot;sd-dropdown__value&quot;] &gt; input[class=&quot;sd-dropdown__filter-string-input&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_101i_0&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2703195.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}' imgPath='img-2703195.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='span(&quot;Exporter Details&quot;)' fallback='true' selected='true'/>
+   <accessor type='AttrClass' value='button(&quot;bg-bluecayuse-500 border border-black/10 cursor-pointer dark:border-white/10 dark:outline-blue-500 dark:shadow-none false flex font-bold forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 items-center justify-between outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-2 py-2 rounded-none shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition w-full&quot;)' fallback='true' selected='false'/>
+   <accessor type='Text' value='button(&quot;Exporter Details&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria4688073826-:r1n:&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 text-center transition border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 outline-0 flex items-center justify-between px-2 py-2 cursor-pointer text-sm font-bold rounded-none w-full bg-bluecayuse-500 text-white false&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div[2]/button&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria4688073826-:r1n:&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;grid grid-cols-12 pt-2 pr-2 pl-2&quot;] &gt; div[class=&quot;col-span-3 pr-3&quot;] &gt; div[class=&quot;border border-bluecayuse-500 rounded&quot;] &gt; div[class=&quot;relative&quot;] &gt; button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 text-center transition border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 outline-0 flex items-center justify-between px-2 py-2 cursor-pointer text-sm font-bold rounded-none w-full bg-bluecayuse-500 text-white false&quot;]&apos;)' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='span(&quot;Exporter Details&quot;)' fallback='true' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='adding Exporting PI' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='div(0, _in(div(&quot;sq_109i&quot;))).xy(0.06, 0.25 )' fallback='true' selected='true'/>
+   <accessor type='Parent' value='div(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;}))).xy(0.06, 0.25 )' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='div(&quot;sd-dropdown__value&quot;).xy(0.06, 0.25 )' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//div[@id=&apos;sq_109i&apos;]/div[1]&quot;).xy(0.06, 0.25 )' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;sd-dropdown__value&quot;]&apos;).xy(0.06, 0.25 )' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div&apos;).xy(0.06, 0.25 )' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_109i&apos;)/div[@class=&apos;sd-dropdown__value&apos;]&quot;).xy(0.06, 0.25 )' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-element__content sd-question__content&quot;] &gt; div[class=&quot;sd-selectbase&quot;] &gt; div[class=&quot;sv-dropdown_select-wrapper&quot;] &gt; div[class=&quot;sd-input sd-dropdown text-black&quot;] &gt; div[class=&quot;sd-dropdown__value&quot;]&apos;).xy(0.06, 0.25 )' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_109i &gt; .sd-dropdown__value&apos;).xy(0.06, 0.25 )' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$Exporting_PI' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='textbox(0, _in(div(&quot;sq_109i&quot;)))' fallback='true' selected='true'/>
+   <accessor type='Parent' value='textbox(0, _in(div(&quot;sq_109i&quot;)))' fallback='true' selected='false'/>
+   <accessor type='Parent' value='textbox(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;})))' fallback='true' selected='false'/>
+   <accessor type='XPathId' value='byXPath(&apos;//*[@id=&quot;sq_109i_0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='textbox(&quot;sd-dropdown__filter-string-input&quot;)' fallback='true' selected='false'/>
+   <accessor type='Id' value='textbox(&quot;sq_109i_0&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//input[@id=&apos;sq_109i_0&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;sd-dropdown__filter-string-input&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div/input&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_109i_0&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='textbox({&apos;type&apos;:&apos;text&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-selectbase&quot;] &gt; div[class=&quot;sv-dropdown_select-wrapper&quot;] &gt; div[class=&quot;sd-input sd-dropdown text-black&quot;] &gt; div[class=&quot;sd-dropdown__value&quot;] &gt; input[class=&quot;sd-dropdown__filter-string-input&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_109i_0&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-7643672.png&apos;),{x:0,y:0,w:1,h:1,cx:0.55,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.55,cy:0.50}' imgPath='img-7643672.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"ENTER"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='textbox(0, _in(div(&quot;sq_109i&quot;)))' fallback='true' selected='true'/>
+   <accessor type='Parent' value='textbox(0, _in(div(&quot;sq_109i&quot;)))' fallback='true' selected='false'/>
+   <accessor type='Parent' value='textbox(0, _in(div({&apos;aria-label&apos;:&apos;Name&apos;})))' fallback='true' selected='false'/>
+   <accessor type='XPathId' value='byXPath(&apos;//*[@id=&quot;sq_109i_0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='textbox(&quot;sd-dropdown__filter-string-input&quot;)' fallback='true' selected='false'/>
+   <accessor type='Id' value='textbox(&quot;sq_109i_0&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//input[@id=&apos;sq_109i_0&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;sd-dropdown__filter-string-input&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div/input&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_109i_0&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='textbox({&apos;type&apos;:&apos;text&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-selectbase&quot;] &gt; div[class=&quot;sv-dropdown_select-wrapper&quot;] &gt; div[class=&quot;sd-input sd-dropdown text-black&quot;] &gt; div[class=&quot;sd-dropdown__value&quot;] &gt; input[class=&quot;sd-dropdown__filter-string-input&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_109i_0&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-7643672.png&apos;),{x:0,y:0,w:1,h:1,cx:0.55,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.55,cy:0.50}' imgPath='img-7643672.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Text' value='span(&quot;General Information&quot;)' fallback='true' selected='true'/>
+   <accessor type='Text' value='span(&quot;General Information&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria2328264152-:r1s:&apos;]/span&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;General Information&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div[3]/button/span&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria2328264152-:r1s:&apos;)/span[1]&quot;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-3924193.png&apos;),{x:0,y:0,w:1,h:1,cx:0.43,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.43,cy:0.50}' imgPath='img-3924193.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='doubleClick' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Text' value='span(&quot;General Information&quot;)' fallback='true' selected='true'/>
+   <accessor type='Text' value='span(&quot;General Information&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria2328264152-:r1s:&apos;]/span&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;General Information&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div[3]/button/span&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria2328264152-:r1s:&apos;)/span[1]&quot;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-3924193.png&apos;),{x:0,y:0,w:1,h:1,cx:0.43,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.43,cy:0.50}' imgPath='img-3924193.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='adding shipping date' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='datebox(0, _in(div(&quot;sq_112&quot;)))' fallback='true' selected='true'/>
+   <accessor type='Parent' value='datebox(0, _in(div(&quot;sq_112&quot;)))' fallback='true' selected='false'/>
+   <accessor type='Parent' value='datebox(0, _in(div({&apos;id&apos;:&apos;sq_112&apos;})))' fallback='true' selected='false'/>
+   <accessor type='XPathId' value='byXPath(&apos;//*[@id=&quot;sq_112i&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='datebox(&quot;sd-input sd-text&quot;)' fallback='true' selected='false'/>
+   <accessor type='Id' value='datebox(&quot;sq_112i&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//input[@id=&apos;sq_112i&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;sd-input sd-text&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/input&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_112i&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='datebox({&apos;type&apos;:&apos;date&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-element--nested sd-element sd-question sd-row__question sd-question--title-top sd-row__question--small sd-question--answered&quot;] &gt; div[class=&quot;sd-text__content sd-question__content&quot;] &gt; input[class=&quot;sd-input sd-text&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_112i&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5807398.png&apos;),{x:0,y:0,w:1,h:1,cx:0.58,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.58,cy:0.50}' imgPath='img-5807398.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$Request_Shipping_date' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='datebox(0, _in(div(&quot;sq_112&quot;)))' fallback='true' selected='true'/>
+   <accessor type='Parent' value='datebox(0, _in(div(&quot;sq_112&quot;)))' fallback='true' selected='false'/>
+   <accessor type='Parent' value='datebox(0, _in(div({&apos;id&apos;:&apos;sq_112&apos;})))' fallback='true' selected='false'/>
+   <accessor type='XPathId' value='byXPath(&apos;//*[@id=&quot;sq_112i&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='datebox(&quot;sd-input sd-text&quot;)' fallback='true' selected='false'/>
+   <accessor type='Id' value='datebox(&quot;sq_112i&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//input[@id=&apos;sq_112i&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;sd-input sd-text&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/input&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_112i&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='datebox({&apos;type&apos;:&apos;date&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-element--nested sd-element sd-question sd-row__question sd-question--title-top sd-row__question--small sd-question--answered&quot;] &gt; div[class=&quot;sd-text__content sd-question__content&quot;] &gt; input[class=&quot;sd-input sd-text&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_112i&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5807398.png&apos;),{x:0,y:0,w:1,h:1,cx:0.58,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.58,cy:0.50}' imgPath='img-5807398.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"ENTER"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='datebox(0, _in(div(&quot;sq_112&quot;)))' fallback='true' selected='true'/>
+   <accessor type='Parent' value='datebox(0, _in(div(&quot;sq_112&quot;)))' fallback='true' selected='false'/>
+   <accessor type='Parent' value='datebox(0, _in(div({&apos;id&apos;:&apos;sq_112&apos;})))' fallback='true' selected='false'/>
+   <accessor type='XPathId' value='byXPath(&apos;//*[@id=&quot;sq_112i&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='datebox(&quot;sd-input sd-text&quot;)' fallback='true' selected='false'/>
+   <accessor type='Id' value='datebox(&quot;sq_112i&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//input[@id=&apos;sq_112i&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;sd-input sd-text&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/input&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_112i&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='datebox({&apos;type&apos;:&apos;date&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-element--nested sd-element sd-question sd-row__question sd-question--title-top sd-row__question--small sd-question--answered&quot;] &gt; div[class=&quot;sd-text__content sd-question__content&quot;] &gt; input[class=&quot;sd-input sd-text&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_112i&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5807398.png&apos;),{x:0,y:0,w:1,h:1,cx:0.58,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.58,cy:0.50}' imgPath='img-5807398.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='div(0, _in(div(&quot;sq_113i&quot;)))' fallback='true' selected='true'/>
+   <accessor type='Parent' value='div(0, _in(div(&quot;sq_113i&quot;)))' fallback='true' selected='false'/>
+   <accessor type='Parent' value='div(0, _in(div({&apos;id&apos;:&apos;sq_113i&apos;})))' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='div(&quot;sd-dropdown__value&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//div[@id=&apos;sq_113i&apos;]/div[1]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;sd-dropdown__value&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_113i&apos;)/div[@class=&apos;sd-dropdown__value&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-element__content sd-question__content&quot;] &gt; div[class=&quot;sd-selectbase&quot;] &gt; div[class=&quot;sv-dropdown_select-wrapper&quot;] &gt; div[class=&quot;sd-input sd-dropdown text-black&quot;] &gt; div[class=&quot;sd-dropdown__value&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_113i &gt; .sd-dropdown__value&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5572296.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}' imgPath='img-5572296.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='$shipping_charges' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='unknown' value='textbox(0, _in(div(&quot;sq_113i&quot;)))' fallback='true' selected='true'/>
+   <accessor type='unknown' value='div(0, _in(div(&quot;sq_113i&quot;)))' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='keyboardCommand' value='"ENTER"' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Parent' value='div(0, _in(div(&quot;sq_113i&quot;)))' fallback='true' selected='true'/>
+   <accessor type='Parent' value='div(0, _in(div(&quot;sq_113i&quot;)))' fallback='true' selected='false'/>
+   <accessor type='Parent' value='div(0, _in(div({&apos;id&apos;:&apos;sq_113i&apos;})))' fallback='true' selected='false'/>
+   <accessor type='AttrClass' value='div(&quot;sd-dropdown__value&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//div[@id=&apos;sq_113i&apos;]/div[1]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;sd-dropdown__value&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div/div/div&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_113i&apos;)/div[@class=&apos;sd-dropdown__value&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sd-element__content sd-question__content&quot;] &gt; div[class=&quot;sd-selectbase&quot;] &gt; div[class=&quot;sv-dropdown_select-wrapper&quot;] &gt; div[class=&quot;sd-input sd-dropdown text-black&quot;] &gt; div[class=&quot;sd-dropdown__value&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;#sq_113i &gt; .sd-dropdown__value&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5572296.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}' imgPath='img-5572296.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Text' value='span(&quot;Animal Details&quot;)' fallback='true' selected='true'/>
+   <accessor type='Text' value='span(&quot;Animal Details&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria2328264152-:r21:&apos;]/span&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Animal Details&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div[4]/button/span&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria2328264152-:r21:&apos;)/span[1]&quot;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2192454.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}' imgPath='img-2192454.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='doubleClick' value='' type='web' desc='Clicking Animal details section' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='Text' value='span(&quot;Animal Details&quot;)' fallback='true' selected='true'/>
+   <accessor type='Text' value='span(&quot;Animal Details&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria2328264152-:r21:&apos;]/span&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Animal Details&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div[2]/div[4]/button/span&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria2328264152-:r21:&apos;)/span[1]&quot;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2192454.png&apos;),{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.50,cy:0.50}' imgPath='img-2192454.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='AttrClass' value='span(&quot;sv-string-viewer sv-string-viewer--multiline[2]&quot;)' fallback='true' selected='true'/>
+   <accessor type='Text' value='span(&quot;No[1]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//div[@id=&apos;sq_118&apos;]/div[2]/div/label/div[1]/span/span&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;No&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/label/div/span/span&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;sq_118&apos;)/div[@class=&apos;sd-element__content sd-question__content&apos;]/div[@class=&apos;sv_qcbc sv_qbln sd-scrollable-container sd-boolean-root&apos;]/label[@class=&apos;sd-boolean sd-boolean--allowhover sd-boolean--indeterminate&apos;]/div[@class=&apos;sd-boolean__thumb-ghost&apos;]/span[@class=&apos;sd-boolean__label&apos;]/span[@class=&apos;sv-string-viewer sv-string-viewer--multiline&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;sv_qcbc sv_qbln sd-scrollable-container sd-boolean-root&quot;] &gt; label[class=&quot;sd-boolean sd-boolean--allowhover sd-boolean--indeterminate&quot;] &gt; div[class=&quot;sd-boolean__thumb-ghost&quot;] &gt; span[class=&quot;sd-boolean__label&quot;] &gt; span[class=&quot;sv-string-viewer sv-string-viewer--multiline&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;.sv_qcbc.sv_qbln.sd-scrollable-container.sd-boolean-root &gt; .sd-boolean.sd-boolean--allowhover.sd-boolean--indeterminate &gt; .sd-boolean__thumb-ghost &gt; .sd-boolean__label &gt; .sv-string-viewer.sv-string-viewer--multiline&apos;)' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='AttrClass' value='div(&quot;[--color:theme(colors.gray.700)] bg-[--color] border-2 border-[--color] dark:[--color:theme(colors.slate.300)] dark:group-pressed:[--color:theme(colors.slate.200)] dark:outline-blue-500 flex flex-shrink-0 forced-colors:![--color:Highlight] forced-colors:outline-[Highlight] group-pressed:[--color:theme(colors.gray.800)] h-5 items-center justify-center outline outline-0 outline-blue-600 outline-offset-2 rounded transition w-5&quot;)' fallback='true' selected='true'/>
+   <accessor type='XPath' value='byXPath(&quot;//table[@id=&apos;react-aria2342477313-:r42:&apos;]/tbody/tr[1]/td[1]/label/div&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-[--color] border-[--color] [--color:theme(colors.gray.700)] group-pressed:[--color:theme(colors.gray.800)] dark:[--color:theme(colors.slate.300)] dark:group-pressed:[--color:theme(colors.slate.200)] forced-colors:![--color:Highlight] outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[4]/div/div/div[2]/div/div/div[5]/div/div/table/tbody/tr/td/label/div&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria2342477313-:r42:&apos;)/tbody[@class=&apos;react-aria-TableBody&apos;]/tr[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] group/row relative cursor-default select-none -outline-offset-2 text-gray-900 disabled:text-gray-300 dark:text-zinc-200 dark:disabled:text-zinc-600 text-sm hover:bg-gray-100 dark:hover:bg-zinc-700/60 selected:bg-blue-100 selected:hover:bg-blue-200 dark:selected:bg-blue-700/30 dark:selected:hover:bg-blue-700/40 outline-0&apos;]/td[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] border-b dark:border-b-zinc-700 group-last/row:border-b-0 [--selected-border:theme(colors.blue.200)] dark:[--selected-border:theme(colors.blue.900)] group-selected/row:border-[--selected-border] [:has(+[data-selected])_&amp;]:border-[--selected-border] p-2 truncate -outline-offset-2 outline-0&apos;]/label[@class=&apos;flex gap-2 items-center group text-sm transition text-gray-800 dark:text-zinc-200&apos;]/div[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-[--color] border-[--color] [--color:theme(colors.gray.700)] group-pressed:[--color:theme(colors.gray.800)] dark:[--color:theme(colors.slate.300)] dark:group-pressed:[--color:theme(colors.slate.200)] forced-colors:![--color:Highlight] outline-0&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='TableXPath' value='byXPath(&apos;//tbody//tr[1]//td[1]//label//div[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-[--color] border-[--color] [--color:theme(colors.gray.700)] group-pressed:[--color:theme(colors.gray.800)] dark:[--color:theme(colors.slate.300)] dark:group-pressed:[--color:theme(colors.slate.200)] forced-colors:![--color:Highlight] outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;tbody[class=&quot;react-aria-TableBody&quot;] &gt; tr[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] group/row relative cursor-default select-none -outline-offset-2 text-gray-900 disabled:text-gray-300 dark:text-zinc-200 dark:disabled:text-zinc-600 text-sm hover:bg-gray-100 dark:hover:bg-zinc-700/60 selected:bg-blue-100 selected:hover:bg-blue-200 dark:selected:bg-blue-700/30 dark:selected:hover:bg-blue-700/40 outline-0&quot;] &gt; td[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] border-b dark:border-b-zinc-700 group-last/row:border-b-0 [--selected-border:theme(colors.blue.200)] dark:[--selected-border:theme(colors.blue.900)] group-selected/row:border-[--selected-border] [:has(+[data-selected])_&amp;]:border-[--selected-border] p-2 truncate -outline-offset-2 outline-0&quot;] &gt; label[class=&quot;flex gap-2 items-center group text-sm transition text-gray-800 dark:text-zinc-200&quot;] &gt; div[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-[--color] border-[--color] [--color:theme(colors.gray.700)] group-pressed:[--color:theme(colors.gray.800)] dark:[--color:theme(colors.slate.300)] dark:group-pressed:[--color:theme(colors.slate.200)] forced-colors:![--color:Highlight] outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='XPath' value='byXPath(&quot;//table[@id=&apos;react-aria7447301843-:r42:&apos;]/tbody/tr[1]/td[1]/label/div&quot;)' fallback='true' selected='true'/>
+   <accessor type='AttrClass' value='div(&quot;[--color:theme(colors.gray.400)] bg-white border-2 border-[--color] dark:[--color:colors.zinc-400)] dark:bg-zinc-900 dark:group-pressed:[--color:theme(colors.zinc.300)] dark:outline-blue-500 flex flex-shrink-0 forced-colors:outline-[Highlight] group-pressed:[--color:theme(colors.gray.500)] h-5 items-center justify-center outline outline-0 outline-blue-600 outline-offset-2 rounded transition w-5&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//table[@id=&apos;react-aria7447301843-:r42:&apos;]/tbody/tr[1]/td[1]/label/div&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-white dark:bg-zinc-900 border-[--color] [--color:theme(colors.gray.400)] dark:[--color:colors.zinc-400)] group-pressed:[--color:theme(colors.gray.500)] dark:group-pressed:[--color:theme(colors.zinc.300)] outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[4]/div/div/div[2]/div/div/div[5]/div/div/table/tbody/tr/td/label/div&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria7447301843-:r42:&apos;)/tbody[@class=&apos;react-aria-TableBody&apos;]/tr[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] group/row relative cursor-default select-none -outline-offset-2 text-gray-900 disabled:text-gray-300 dark:text-zinc-200 dark:disabled:text-zinc-600 text-sm hover:bg-gray-100 dark:hover:bg-zinc-700/60 selected:bg-blue-100 selected:hover:bg-blue-200 dark:selected:bg-blue-700/30 dark:selected:hover:bg-blue-700/40 outline-0&apos;]/td[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] border-b dark:border-b-zinc-700 group-last/row:border-b-0 [--selected-border:theme(colors.blue.200)] dark:[--selected-border:theme(colors.blue.900)] group-selected/row:border-[--selected-border] [:has(+[data-selected])_&amp;]:border-[--selected-border] p-2 truncate -outline-offset-2 outline-0&apos;]/label[@class=&apos;flex gap-2 items-center group text-sm transition text-gray-800 dark:text-zinc-200&apos;]/div[@class=&apos;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-white dark:bg-zinc-900 border-[--color] [--color:theme(colors.gray.400)] dark:[--color:colors.zinc-400)] group-pressed:[--color:theme(colors.gray.500)] dark:group-pressed:[--color:theme(colors.zinc.300)] outline-0&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='TableXPath' value='byXPath(&apos;//tbody//tr[1]//td[1]//label//div[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-white dark:bg-zinc-900 border-[--color] [--color:theme(colors.gray.400)] dark:[--color:colors.zinc-400)] group-pressed:[--color:theme(colors.gray.500)] dark:group-pressed:[--color:theme(colors.zinc.300)] outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;tbody[class=&quot;react-aria-TableBody&quot;] &gt; tr[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] group/row relative cursor-default select-none -outline-offset-2 text-gray-900 disabled:text-gray-300 dark:text-zinc-200 dark:disabled:text-zinc-600 text-sm hover:bg-gray-100 dark:hover:bg-zinc-700/60 selected:bg-blue-100 selected:hover:bg-blue-200 dark:selected:bg-blue-700/30 dark:selected:hover:bg-blue-700/40 outline-0&quot;] &gt; td[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] border-b dark:border-b-zinc-700 group-last/row:border-b-0 [--selected-border:theme(colors.blue.200)] dark:[--selected-border:theme(colors.blue.900)] group-selected/row:border-[--selected-border] [:has(+[data-selected])_&amp;]:border-[--selected-border] p-2 truncate -outline-offset-2 outline-0&quot;] &gt; label[class=&quot;flex gap-2 items-center group text-sm transition text-gray-800 dark:text-zinc-200&quot;] &gt; div[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 w-5 h-5 flex-shrink-0 rounded flex items-center justify-center border-2 transition bg-white dark:bg-zinc-900 border-[--color] [--color:theme(colors.gray.400)] dark:[--color:colors.zinc-400)] group-pressed:[--color:theme(colors.gray.500)] dark:group-pressed:[--color:theme(colors.zinc.300)] outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Add&quot;]&apos;)' fallback='true' selected='true'/>
+   <accessor type='AttrClass' value='button(&quot;bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition&quot;)' fallback='true' selected='false'/>
+   <accessor type='Text' value='button(&quot;Add&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria5791597121-:r40:&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Add&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[4]/div/div/div[2]/div/div/div[4]/div[2]/button&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria5791597121-:r40:&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2817703.png&apos;),{x:0,y:0,w:1,h:1,cx:0.52,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.52,cy:0.50}' imgPath='img-2817703.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Add&quot;]&apos;)' fallback='true' selected='true'/>
+   <accessor type='AttrClass' value='button(&quot;bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition&quot;)' fallback='true' selected='false'/>
+   <accessor type='Text' value='button(&quot;Add&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria5791597121-:r40:&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Add&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div/div/div/div/div/div/div/div[2]/div[4]/div/div/div[2]/div/div/div[4]/div[2]/button&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria5791597121-:r40:&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-2817703.png&apos;),{x:0,y:0,w:1,h:1,cx:0.52,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.52,cy:0.50}' imgPath='img-2817703.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Save&quot;]&apos;)' fallback='true' selected='true'/>
+   <accessor type='AttrClass' value='button(&quot;bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 mr-2 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition&quot;)' fallback='true' selected='false'/>
+   <accessor type='Text' value='button(&quot;Save&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria5791597121-:r1e:&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Save&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/button&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria5791597121-:r1e:&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5665711.png&apos;),{x:0,y:0,w:1,h:1,cx:0.35,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.35,cy:0.50}' imgPath='img-5665711.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Save&quot;]&apos;)' fallback='true' selected='true'/>
+   <accessor type='AttrClass' value='button(&quot;bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 mr-2 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition&quot;)' fallback='true' selected='false'/>
+   <accessor type='Text' value='button(&quot;Save&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria5791597121-:r1e:&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Save&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/button&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria5791597121-:r1e:&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='Image' value='byImg(imgSection(readImg(&apos;{resources}/img-5665711.png&apos;),{x:0,y:0,w:1,h:1,cx:0.35,cy:0.50}))' coords='{x:0,y:0,w:1,h:1,cx:0.35,cy:0.50}' imgPath='img-5665711.png' fallback='false' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Submit Request&quot;]&apos;)' fallback='true' selected='true'/>
+   <accessor type='AttrClass' value='button(&quot;bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 mr-2 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition w-36&quot;)' fallback='true' selected='false'/>
+   <accessor type='Text' value='button(&quot;Submit Request&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria5791597121-:r26:&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2 w-36&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Submit Request&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/button&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria5791597121-:r26:&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;pb-2&quot;] &gt; button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2 w-36&quot;]&apos;)' fallback='true' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' isMasked='false' isHidden='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Submit Request&quot;]&apos;)' fallback='true' selected='true'/>
+   <accessor type='AttrClass' value='button(&quot;bg-bluecayuse-600 border border-black/10 cursor-default dark:border-white/10 dark:outline-blue-500 dark:shadow-none forced-colors:outline-[Highlight] hover:bg-bluecayuse-400 mr-2 outline outline-0 outline-blue-600 outline-offset-2 pressed:bg-bluecayuse-800 px-5 py-2 rounded-lg shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] text-center text-sm text-white transition w-36&quot;)' fallback='true' selected='false'/>
+   <accessor type='Text' value='button(&quot;Submit Request&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPath' value='byXPath(&quot;//button[@id=&apos;react-aria5791597121-:r26:&apos;]&quot;)' fallback='true' selected='false'/>
+   <accessor type='XPathClass' value='byXPath(&apos;//*[@class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2 w-36&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='XPathText' value='byXPath(&apos;//*[text()=&quot;Submit Request&quot;]&apos;)' fallback='true' selected='false'/>
+   <accessor type='AbsoluteXPath' value='byXPath(&apos;/html/body/div[3]/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/button&apos;)' fallback='true' selected='false'/>
+   <accessor type='RelativeXPath' value='byXPath(&quot;id(&apos;react-aria5791597121-:r26:&apos;)&quot;)' fallback='true' selected='false'/>
+   <accessor type='Attribute' value='button({&apos;data-hovered&apos;:&apos;true&apos;})' fallback='true' selected='false'/>
+   <accessor type='JQuery' value='byJQuery(&apos;div[class=&quot;pb-2&quot;] &gt; button[class=&quot;outline outline-blue-600 dark:outline-blue-500 forced-colors:outline-[Highlight] outline-offset-2 px-5 py-2 text-sm text-center transition rounded-lg border border-black/10 dark:border-white/10 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] dark:shadow-none cursor-default bg-bluecayuse-600 hover:bg-bluecayuse-400 pressed:bg-bluecayuse-800 text-white outline-0 mr-2 w-36&quot;]&apos;)' fallback='true' selected='false'/>
+</dialect>
+</step>
+</testcase>
